@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Prince Narula — Film &amp; Television poster</title>
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter></defs>
+<rect width="800" height="1000" fill="#121212"/>
+<text x="400" y="560" text-anchor="middle" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="520" fill="none" stroke="#FBFAF6" stroke-opacity="0.16" stroke-width="3" letter-spacing="-20">PN</text>
+<rect x="40" y="40" width="720" height="920" fill="none" stroke="#FBFAF6" stroke-opacity="0.35" stroke-width="2"/>
+<text x="70" y="100" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="5" fill="#D4FF3A">MADE IN CHANDIGARH</text>
+<text x="730" y="100" text-anchor="end" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" fill="#FBFAF6">BORN 1990</text>
+<g transform="translate(400 400)">
+    <path d="M-200 180 L-30 -40 L30 -40 L200 180Z" fill="#D4FF3A" opacity="0.22"/>
+    <path d="M0 -150 L35 -50 L140 -50 L55 10 L88 115 L0 52 L-88 115 L-55 10 L-140 -50 L-35 -50Z" fill="#D4FF3A" stroke="#121212" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="0" cy="-15" r="26" fill="#FBFAF6"/></g>
+<text x="70" y="790" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">PRINCE</text>
+<text x="70" y="886" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">NARULA</text>
+<rect x="70" y="910" width="60" height="10" fill="#D4FF3A"/>
+<text x="150" y="921" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="3" fill="#FBFAF6">FILM &amp; TELEVISION</text>
+<rect width="800" height="1000" filter="url(#g)"/>
+</svg>

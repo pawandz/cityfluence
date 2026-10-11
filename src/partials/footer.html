@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="site-footer__wrap">
+    <div class="site-footer__grid">
+      <div>
+        <h2 class="site-footer__h">Explore</h2>
+        <ul>
+          <li><a href="{{root}}creators/">Creators</a></li>
+          <li><a href="{{root}}people/">Famous People</a></li>
+          <li><a href="{{root}}city-life/">City Life</a></li>
+          <li><a href="{{root}}stories/">Stories &amp; Guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__h">Work with us</h2>
+        <ul>
+          <li><a href="{{root}}for-businesses/">For Businesses</a></li>
+          <li><a href="{{root}}contact/?type=business">Start a campaign</a></li>
+          <li><a href="{{root}}contact/?type=creator">Join as a creator</a></li>
+          <li><a href="{{root}}contact/?type=partner">Partnerships</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="site-footer__h">Call</h2>
+        {{render:contact-phones}}
+      </div>
+      <div>
+        <h2 class="site-footer__h">Email</h2>
+        {{render:contact-emails}}
+        <h2 class="site-footer__h">Follow</h2>
+        {{render:social-links}}
+      </div>
+      <div>
+        <h2 class="site-footer__h">Company</h2>
+        <ul>
+          <li><a href="{{root}}about/">About</a></li>
+          <li><a href="{{root}}info/">Info &amp; FAQ</a></li>
+          <li><a href="{{root}}privacy/">Privacy Policy</a></li>
+          <li><a href="{{root}}terms/">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <a class="wordmark wordmark--light" href="{{root}}" aria-label="Cityfluence — home">CITYFLUENCE<span class="wordmark__dot" aria-hidden="true"></span></a>
+      <p>Where Chandigarh Connects. © {{render:year}} Cityfluence · Chandigarh · Mohali · Panchkula</p>
+    </div>
+    {{render:preview-banner}}
+  </div>
+</footer>

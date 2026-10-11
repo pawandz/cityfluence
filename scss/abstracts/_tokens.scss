@@ -1,0 +1,100 @@
+// ─── Design tokens ────────────────────────────────────────────────
+// Single source of truth. Exposed as CSS custom properties in base/_root.
+
+$colors: (
+  'ivory': #f6f5f1,
+  'paper': #fbfaf6,
+  'ink': #121212,
+  'ink-soft': #262624,
+  'lime': #d4ff3a,
+  'lime-deep': #b6e014,
+  'stone': #8c877d,
+  'muted': #5c5850,
+  'beige': #e4ddcf,
+  'sand': #d3c8b4,
+  'concrete': #bdb8ad,
+  'line': rgba(18, 18, 18, 0.14),
+  'line-light': rgba(251, 250, 246, 0.18),
+  'error': #b42318,
+  'success': #1f6f3a,
+  'sky': #dfe8f8,
+  'sky-mid': #b9cdf1,
+  'sky-deep': #7fa2ea,
+  'indigo': #3b34e6,
+  'white': #ffffff,
+);
+
+$font-display: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+// Fluid type scale: (min-rem, max-rem) between 360px and 1440px viewports.
+$type-scale: (
+  'xs': (0.75, 0.8125),
+  'sm': (0.875, 0.9375),
+  'base': (1, 1.0625),
+  'md': (1.125, 1.3125),
+  'lg': (1.375, 1.75),
+  'xl': (1.75, 2.5),
+  '2xl': (2.25, 3.75),
+  '3xl': (2.15, 5.5),
+  '4xl': (2.6, 7.5),
+  'hero': (2.45, 12),
+);
+
+$space: (
+  '3xs': 0.25rem,
+  '2xs': 0.5rem,
+  'xs': 0.75rem,
+  's': 1rem,
+  'm': 1.5rem,
+  'l': 2rem,
+  'xl': 3rem,
+  '2xl': 4.5rem,
+  '3xl': 7rem,
+);
+
+$breakpoints: (
+  'sm': 600px,
+  'md': 900px,
+  'lg': 1200px,
+  'xl': 1500px,
+);
+
+$containers: (
+  'narrow': 46rem,
+  'default': 84rem,
+  'wide': 100rem,
+);
+
+$radius: (
+  's': 6px,
+  'm': 14px,
+  'l': 24px,
+  'pill': 999px,
+);
+
+$shadows: (
+  'card': (0 1px 0 rgba(18, 18, 18, 0.04), 0 18px 40px -24px rgba(18, 18, 18, 0.25)),
+  'lift': 0 30px 60px -30px rgba(18, 18, 18, 0.35),
+);
+
+$z: (
+  'base': 1,
+  'raised': 10,
+  'header': 100,
+  'menu': 200,
+  'dialog': 300,
+  'skip': 400,
+);
+
+$ease: (
+  'out': cubic-bezier(0.22, 1, 0.36, 1),
+  'in-out': cubic-bezier(0.65, 0, 0.35, 1),
+  'expo': cubic-bezier(0.16, 1, 0.3, 1),
+);
+
+$duration: (
+  'fast': 180ms,
+  'base': 320ms,
+  'slow': 650ms,
+);

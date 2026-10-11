@@ -1,0 +1,42 @@
+<!--meta
+{"route":"/stories/","page":"stories","title":"Stories & Guides — Chandigarh City Guides, Food, Culture & Creators | Cityfluence","description":"City guides, food guides, culture features, creator interviews and practical advice for local businesses and creators in Chandigarh, Mohali and Panchkula.","bodyClass":"page-stories","breadcrumb":"Stories & Guides"}
+-->
+<section class="page-hero page-hero--stories" aria-labelledby="page-title">
+  <div class="container page-hero__grid">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li aria-current="page">Stories &amp; Guides</li></ol></nav>
+    <p class="eyebrow" data-hero="eyebrow">Stories &amp; guides</p>
+    <h1 class="page-hero__title" id="page-title" data-hero="title">
+      <span class="line"><span class="line__inner">Stories worth sharing.</span></span>
+      <span class="line"><span class="line__inner">Places worth <em>knowing.</em></span></span>
+    </h1>
+  </div>
+</section>
+
+<section class="section section--tight" aria-label="Featured story">
+  <div class="container">
+    {{render:article-featured}}
+  </div>
+</section>
+
+<section class="section section--tight archive" aria-labelledby="archive-title">
+  <div class="container">
+    <header class="archive__head">
+      <h2 class="section-title section-title--sm" id="archive-title">Latest articles</h2>
+      <div class="field field--search">
+        <label class="field__label" for="s-search">Search stories</label>
+        <input class="field__input" id="s-search" type="search" placeholder="Search by title or topic" data-story-search autocomplete="off">
+      </div>
+    </header>
+    <div class="chip-row" role="group" aria-label="Filter by category" data-story-filters>
+      {{render:category-chips}}
+    </div>
+    <p class="filters__count" data-story-count role="status" aria-live="polite"></p>
+    <div class="story-grid" data-story-grid data-reveal-group>
+      {{render:articles-all}}
+    </div>
+    <div class="empty-state" data-story-empty hidden>
+      <h3>Nothing here yet.</h3>
+      <p>We’re working on stories in this category. Have an idea? <a class="link-underline" href="{{root}}contact/?type=partner">Pitch it to us</a>.</p>
+    </div>
+  </div>
+</section>

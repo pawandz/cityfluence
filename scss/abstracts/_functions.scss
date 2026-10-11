@@ -1,0 +1,31 @@
+@use 'sass:map';
+@use 'sass:math';
+@use 'tokens' as t;
+
+@function color($key) {
+  @if not map.has-key(t.$colors, $key) { @error 'Unknown color `#{$key}`.'; }
+  @return var(--c-#{$key});
+}
+
+@function space($key) {
+  @return var(--space-#{$key});
+}
+
+@function z($key) {
+  @return map.get(t.$z, $key);
+}
+
+@function ease($key) {
+  @return var(--ease-#{$key});
+}
+
+@function rem($px) {
+  @return math.div($px, 16px) * 1rem;
+}
+
+/// Fluid clamp between two rem values across 360px → 1440px.
+@function fluid($min-rem, $max-rem, $min-vw: 360, $max-vw: 1440) {
+  $slope: math.div(($max-rem - $min-rem) * 16, $max-vw - $min-vw);
+  $intercept: $min-rem - math.div($slope * $min-vw, 16);
+  @return clamp(#{$min-rem}rem, #{math.div(math.round($intercept * 1000), 1000)}rem + #{math.div(math.round($slope * 100 * 1000), 1000)}vw, #{$max-rem}rem);
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img"><title>Illustration of a thali with bowls of food</title>
+<defs>
+<filter id="g5"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.1 0"/></filter></defs>
+<rect width="800" height="800" fill="#B5583A"/>
+<circle cx="400" cy="420" r="320" fill="#BDB8AD"/>
+<circle cx="400" cy="420" r="300" fill="#E4DDCF"/>
+<circle cx="400" cy="220" r="74" fill="#8C877D"/><circle cx="400" cy="220" r="62" fill="#D9A441"/><circle cx="560" cy="300" r="74" fill="#8C877D"/><circle cx="560" cy="300" r="62" fill="#B5583A"/><circle cx="600" cy="470" r="74" fill="#8C877D"/><circle cx="600" cy="470" r="62" fill="#5E7A5A"/><circle cx="480" cy="600" r="74" fill="#8C877D"/><circle cx="480" cy="600" r="62" fill="#FBFAF6"/><circle cx="300" cy="600" r="74" fill="#8C877D"/><circle cx="300" cy="600" r="62" fill="#D9757A"/><circle cx="220" cy="450" r="74" fill="#8C877D"/><circle cx="220" cy="450" r="62" fill="#D4FF3A"/>
+<circle cx="390" cy="420" r="96" fill="#e9d6a8"/><circle cx="370" cy="400" r="8" fill="#c79a52"/><circle cx="410" cy="440" r="6" fill="#c79a52"/>
+<ellipse cx="230" cy="280" rx="90" ry="70" fill="#d9b36c"/><ellipse cx="230" cy="280" rx="60" ry="44" fill="none" stroke="#b78c45" stroke-width="4" stroke-dasharray="6 10"/>
+<rect width="800" height="800" filter="url(#g5)"/></svg>

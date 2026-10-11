@@ -1,0 +1,39 @@
+<article class="article">
+  <header class="article__header container narrow">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li><a href="{{root}}stories/">Stories</a></li><li aria-current="page">{{articleTitle}}</li></ol></nav>
+    <p class="eyebrow" data-hero="eyebrow">{{articleCategory}}</p>
+    <h1 class="article__title" data-hero="title">{{articleTitle}}</h1>
+    <p class="article__intro" data-hero="lede">{{articleIntro}}</p>
+    <p class="article__meta" data-hero="ctas">
+      <span>By {{articleAuthor}}</span>
+      <span>Published <time datetime="{{articlePublishedIso}}">{{articlePublished}}</time></span>
+      <span>Updated <time datetime="{{articleUpdatedIso}}">{{articleUpdated}}</time></span>
+      <span>{{articleReading}} min read</span>
+    </p>
+    {{sponsoredNotice}}
+  </header>
+  <figure class="article__hero container" data-hero="collage">
+    <img src="{{root}}{{articleImage}}" alt="{{articleImageAlt}}" width="1600" height="900" fetchpriority="high">
+    <figcaption>{{articleCaption}}</figcaption>
+  </figure>
+  <div class="article__body container narrow prose">
+    {{articleBody}}
+  </div>
+  <footer class="article__footer container narrow">
+    <div class="share">
+      <p class="field__label">Share</p>
+      <ul>
+        <li><a class="chip-link" href="{{shareWhatsapp}}" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a class="chip-link" href="{{shareX}}" target="_blank" rel="noopener noreferrer">X</a></li>
+        <li><a class="chip-link" href="{{shareLinkedin}}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><button class="chip-link" type="button" data-copy-link="{{canonicalUrl}}">Copy link</button></li>
+      </ul>
+    </div>
+  </footer>
+</article>
+<section class="section related" aria-labelledby="related-title">
+  <div class="container">
+    <h2 class="section-title section-title--sm" id="related-title">Related stories</h2>
+    <div class="story-grid" data-reveal-group>{{relatedCards}}</div>
+  </div>
+</section>

@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height: 1.08; letter-spacing: -0.025em; }
+.h3 { @include type('lg'); font-family: var(--font-display); font-weight: 500; line-height: 1.12; letter-spacing: -0.025em; }
+
+// Small label above headings — sentence case, quiet.
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  margin-bottom: space('m');
+  font-family: var(--font-body);
+  @include type('sm');
+  font-weight: 500;
+  letter-spacing: 0;
+  color: color('muted');
+
+  &--lime { color: color('lime'); }
+  &__dot { width: 0.55em; height: 0.55em; border-radius: 50%; background: color('lime'); box-shadow: 0 0 0 1px color('ink'); }
+}
+
+// Oversized, light, sentence-case headlines.
+.section-title {
+  @include display;
+  font-size: clamp(2.6rem, 6.6vw, 6.5rem);
+  &--xl { font-size: clamp(3rem, 9vw, 9.5rem); }
+  &--sm { font-size: clamp(2.1rem, 4.4vw, 4rem); }
+}
+
+.hl {
+  background: linear-gradient(transparent 62%, var(--c-lime) 62%, var(--c-lime) 92%, transparent 92%);
+  padding: 0 0.06em;
+}
+
+.prose {
+  @include type('md');
+  line-height: 1.7;
+  > * + * { margin-top: 1.1em; }
+  h2 { @include type('xl'); margin-top: 2em; font-weight: 500; letter-spacing: -0.03em; }
+  ul, ol { padding-left: 1.2em; }
+  li + li { margin-top: 0.4em; }
+  li::marker { color: color('stone'); }
+  a { text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+  &--large { @include type('lg'); line-height: 1.45; font-weight: 500; }
+}
+
+.is-muted { color: color('muted'); }
+.small { @include type('sm'); }
+.visually-hidden { @include visually-hidden; }

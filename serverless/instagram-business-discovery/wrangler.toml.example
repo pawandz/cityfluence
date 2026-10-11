@@ -1,0 +1,13 @@
+# Copy to wrangler.toml, fill in values, then:
+#   npx wrangler secret put IG_ACCESS_TOKEN
+#   npx wrangler deploy
+name = "cityfluence-creators"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+IG_USER_ID = "REPLACE_WITH_YOUR_IG_PROFESSIONAL_ACCOUNT_ID"
+GRAPH_VERSION = "v25.0"
+ALLOWED_ORIGIN = "https://cityfluence.in"
+USERNAMES = ""            # e.g. "creatorone,creatortwo" — consenting creators only
+CACHE_SECONDS = "3600"

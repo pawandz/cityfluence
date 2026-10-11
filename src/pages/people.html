@@ -1,0 +1,79 @@
+<!--meta
+{"route":"/people/","page":"people","title":"Famous People from Chandigarh — Cricketers, Actors, Athletes & Icons | Cityfluence","description":"Meet 64 famous people from Chandigarh — Kapil Dev, Neerja Bhanot, Ayushmann Khurrana, Flipkart’s Sachin and Binny Bansal, Miss Universe Harnaaz Sandhu and more. Profiles, timelines and quick facts.","bodyClass":"page-people","breadcrumb":"Famous People"}
+-->
+<section class="page-hero page-hero--dark people-hero" aria-labelledby="page-title">
+  <div class="container page-hero__grid">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li aria-current="page">Famous People</li></ol></nav>
+    <p class="eyebrow eyebrow--lime" data-hero="eyebrow">Made in Chandigarh</p>
+    <h1 class="page-hero__title" id="page-title" data-hero="title">
+      <span class="line"><span class="line__inner">Famous people</span></span>
+      <span class="line"><span class="line__inner">from <span class="hl">Chandigarh.</span></span></span>
+    </h1>
+    <p class="page-hero__lede" data-hero="lede">World Cup winners, the founders of Hotmail and Flipkart, an Ashoka Chakra hero, a Miss Universe, Olympians, judges and the stars of Indian screens — all from the City Beautiful.</p>
+    <ul class="people-hero__stats" data-hero="ctas">{{render:people-hero-stats}}</ul>
+    <div class="people-hero__wall" data-hero="collage" aria-hidden="true">{{render:people-poster-wall}}</div>
+  </div>
+</section>
+
+<section class="section section--tight births" aria-labelledby="births-title">
+  <div class="container">
+    <header class="section-head section-head--split">
+      <div>
+        <p class="eyebrow" data-reveal>Six decades of talent</p>
+        <h2 class="section-title section-title--sm" id="births-title" data-split>Every birth year, mapped.</h2>
+      </div>
+      <p class="section-head__aside" data-reveal>Each dot is a person, placed by birth year and coloured by field. Select one to open their profile.</p>
+    </header>
+    <figure class="births-chart" data-reveal>
+      {{render:people-births-chart}}
+      <figcaption>{{render:people-legend}}</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--tight" aria-labelledby="all-title">
+  <div class="container">
+    <header class="archive__head">
+      <h2 class="section-title section-title--sm" id="all-title">Born in Chandigarh <span class="count-badge">{{render:people-born-count}}</span></h2>
+    </header>
+    <div class="chip-row" role="group" aria-label="Filter by field" data-people-filters>
+      {{render:people-chips}}
+    </div>
+    <p class="filters__count" data-people-count role="status" aria-live="polite"></p>
+    <div class="people-grid" data-people-grid data-reveal-group>
+      {{render:people-grid}}
+    </div>
+
+    <header class="archive__head people-raised__head">
+      <div>
+        <h2 class="section-title section-title--sm" id="raised-title">Raised in Chandigarh</h2>
+        <p class="is-muted">Born elsewhere, but grew up in the city — their Chandigarh connection is described on each profile.</p>
+      </div>
+    </header>
+    <div class="people-grid" data-people-grid data-reveal-group aria-labelledby="raised-title">
+      {{render:people-grid-raised}}
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner cta-banner--lime" aria-labelledby="next-title">
+  <div class="container cta-banner__inner">
+    <h2 class="cta-banner__title" id="next-title" data-split>The next famous name is already posting.</h2>
+    <div class="cta-banner__foot" data-reveal>
+      <p>Chandigarh keeps producing talent. Meet the Tricity creators shaping the city today — or put them to work for your brand.</p>
+      <div class="cta-banner__ctas">
+        <a class="btn btn--ink btn--large" href="{{root}}creators/">Discover creators{{arrow}}</a>
+        <a class="btn btn--ghost btn--large" href="{{root}}for-businesses/">Plan a campaign</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight method" aria-labelledby="method-title">
+  <div class="container narrow">
+    <h2 class="h3" id="method-title">How this list was made</h2>
+    <p>We started from <a class="link-underline" href="https://pantheon.world/profile/place/chandigarh" target="_blank" rel="noopener noreferrer">Pantheon’s Chandigarh page</a> (23 people) and extended it with a Wikidata search for everyone recorded as born in Chandigarh with an English Wikipedia article, ranked by how widely they are covered. Someone appears under “Born in Chandigarh” only when Wikidata records it and their Wikipedia article supports it; where Wikipedia gives another birthplace but describes growing up here, they appear under “Raised in Chandigarh”. Every profile is written from the person’s public Wikipedia article, linked on their page, and was checked on 11 October 2026.</p>
+    <p>{{render:people-excluded}}</p>
+    <p>Profiles are independent and editorial — no one listed is affiliated with or endorses Cityfluence. Know someone we’ve missed? <a class="link-underline" href="{{root}}contact/?type=partner">Suggest a profile</a>.</p>
+  </div>
+</section>

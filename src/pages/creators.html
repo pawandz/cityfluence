@@ -1,0 +1,93 @@
+<!--meta
+{"route":"/creators/","page":"creators","title":"Chandigarh Creators & Influencers Directory | Cityfluence","description":"Search Chandigarh, Mohali and Panchkula content creators by niche, platform, location and content style. Find the right creator for your local business.","bodyClass":"page-creators","breadcrumb":"Creators"}
+-->
+<section class="page-hero page-hero--creators" aria-labelledby="page-title">
+  <div class="container page-hero__grid">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li aria-current="page">Creators</li></ol></nav>
+    <p class="eyebrow" data-hero="eyebrow">Creator directory</p>
+    <h1 class="page-hero__title" id="page-title" data-hero="title">
+      <span class="line"><span class="line__inner">Find your people.</span></span>
+      <span class="line"><span class="line__inner">Create something <em>great.</em></span></span>
+    </h1>
+    <p class="page-hero__lede" data-hero="lede">Discover Chandigarh’s creator community by niche, content style, platform and location.</p>
+    <figure class="page-hero__art" data-hero="collage"><img src="{{root}}assets/images/portrait-02.svg" alt="Placeholder portrait illustration" width="480" height="600" fetchpriority="high"></figure>
+  </div>
+</section>
+
+<section class="section section--tight directory" aria-labelledby="directory-title">
+  <div class="container">
+    <h2 class="visually-hidden" id="directory-title">Browse creators</h2>
+    <p class="notice notice--demo"><strong>Directory in preview.</strong> All profiles are demonstration placeholders while creators are invited and verified. Metrics are only shown when they come from a verified, authorised source.</p>
+
+    <form class="filters" data-filters role="search" aria-label="Filter creators" onsubmit="return false">
+      <div class="filters__row">
+        <div class="field field--search">
+          <label class="field__label" for="f-search">Search</label>
+          <input class="field__input" id="f-search" name="q" type="search" placeholder="Name or @username" autocomplete="off">
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-niche">Niche</label>
+          <select class="field__input" id="f-niche" name="niche"><option value="">All niches</option>{{render:niche-options}}</select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-platform">Platform</label>
+          <select class="field__input" id="f-platform" name="platform"><option value="">All platforms</option>{{render:platform-options}}</select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-content">Content type</label>
+          <select class="field__input" id="f-content" name="content"><option value="">Any content</option>{{render:content-options}}</select>
+        </div>
+        <div class="field">
+          <label class="field__label" for="f-sort">Sort</label>
+          <select class="field__input" id="f-sort" name="sort"><option value="featured">Featured first</option><option value="az">A–Z</option><option value="za">Z–A</option></select>
+        </div>
+      </div>
+      <div class="filters__row filters__row--bottom">
+        <fieldset class="chip-group">
+          <legend class="field__label">Location</legend>
+          {{render:location-chips}}
+        </fieldset>
+        <label class="chip-toggle"><input type="checkbox" name="open"><span>Open to collaborations</span></label>
+        <div class="filters__meta">
+          <p class="filters__count" data-results-count role="status" aria-live="polite">{{render:creators-count}}</p>
+          <button class="link-underline filters__clear" type="reset" data-clear-filters>Clear all filters</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="creator-grid creator-grid--directory" data-creator-grid data-directory>
+      {{render:creators-all}}
+    </div>
+    <div class="empty-state" data-empty-state hidden>
+      <h3>No creators match those filters.</h3>
+      <p>Try removing a filter, or tell us who you’re looking for and we’ll help.</p>
+      <button class="btn btn--ink" type="button" data-clear-filters>Clear all filters</button>
+    </div>
+    <p class="data-status" data-creator-status role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="section join-band" aria-labelledby="join-title">
+  <div class="container join-band__inner">
+    <div>
+      <p class="eyebrow" data-reveal>For creators</p>
+      <h2 class="section-title" id="join-title" data-split>Join the creator network.</h2>
+    </div>
+    <div data-reveal>
+      <p>Based in Chandigarh, Mohali or Panchkula? Share your work and the kind of collaborations you want. Your profile goes live only after you approve what is shown.</p>
+      <ul class="tick-list">
+        <li>Free to register — no exclusivity.</li>
+        <li>You control your profile and the metrics displayed.</li>
+        <li>Only relevant, clearly briefed opportunities.</li>
+      </ul>
+      <a class="btn btn--lime btn--large" href="{{root}}contact/?type=creator">Join the creator network<svg class="icon-arrow" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight method" aria-labelledby="method-title">
+  <div class="container narrow">
+    <h2 class="h3" id="method-title">How profiles are selected and verified</h2>
+    <p>“Featured Creators” is an editorial selection by the Cityfluence team, not a ranking. We do not publish composite scores. Audience numbers appear only when they come from the creator’s own authorised account connection or a verified editorial check, and always show when they were last updated.</p>
+  </div>
+</section>

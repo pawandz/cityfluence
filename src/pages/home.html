@@ -1,0 +1,199 @@
+<!--meta
+{"route":"/","page":"home","title":"Cityfluence — Chandigarh Creators, City Life & Influencer Marketing","description":"Discover Chandigarh’s creators, meet the famous names from the city, explore life across Chandigarh, Mohali and Panchkula, and connect local businesses with the right creators.","bodyClass":"page-home has-overlay-header"}
+-->
+<section class="hero" data-hero aria-labelledby="hero-title">
+  <div class="hero__media" aria-hidden="true">
+    <img src="./assets/images/capitol.svg" alt="" width="900" height="1100" fetchpriority="high" data-hero="collage">
+  </div>
+  <div class="hero__inner">
+    <div class="hero__intro" data-hero="lede">
+      <p class="hero__lede">Discover the people shaping our city. Explore the places everyone talks about. Connect local businesses with the creators who move Chandigarh forward.</p>
+      <div class="hero__ctas" data-hero="ctas">
+        <a class="pill pill--light" href="./creators/">Explore creators</a>
+        <a class="pill pill--outline-light" href="./for-businesses/">Grow your business</a>
+      </div>
+    </div>
+    <a class="hero__chip" href="./people/" data-hero="loc">
+      <img src="./assets/images/people/neerja-bhanot.svg" alt="" width="64" height="80">
+      <span>From Kapil Dev to Harnaaz Sandhu — meet the famous names from Chandigarh <span aria-hidden="true">→</span></span>
+    </a>
+    <h1 class="hero__title" id="hero-title" data-hero="title">
+      <span class="line hero__line--a"><span class="line__inner">Chandigarh has</span></span>
+      <span class="line hero__line--b"><span class="line__inner">its own influence</span></span>
+    </h1>
+    <a class="hero__arrow" href="#powered" data-hero="cue" aria-label="Scroll to explore">
+      <svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true"><path d="M24 6v34M10 27l14 14 14-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</section>
+
+<section class="powered" id="powered" aria-labelledby="powered-title">
+  <h2 class="visually-hidden" id="powered-title">Local stories, powered by its people</h2>
+  <div class="powered__type powered__type--top" aria-hidden="true" data-reveal><span>Local stories</span><span>powered</span></div>
+  <div class="powered__track" data-drift>
+    <a class="float-card float-card--tall" href="./people/kapil-dev/"><img src="./assets/images/people/kapil-dev.svg" alt="Poster for Kapil Dev" width="800" height="1000" loading="lazy"><span>Kapil Dev →</span></a>
+    <a class="float-card" href="./creators/?profile=demo-food-01"><img src="./assets/images/portrait-01.svg" alt="Placeholder creator portrait" width="480" height="600" loading="lazy"><span>Food creator (demo) →</span></a>
+    <a class="float-card float-card--tall float-card--low" href="./people/ayushmann-khurrana/"><img src="./assets/images/people/ayushmann-khurrana.svg" alt="Poster for Ayushmann Khurrana" width="800" height="1000" loading="lazy"><span>Ayushmann Khurrana →</span></a>
+    <a class="float-card" href="./people/harnaaz-sandhu/"><img src="./assets/images/people/harnaaz-sandhu.svg" alt="Poster for Harnaaz Sandhu" width="800" height="1000" loading="lazy"><span>Harnaaz Sandhu →</span></a>
+    <a class="float-card float-card--low" href="./creators/?profile=demo-fashion-03"><img src="./assets/images/portrait-03.svg" alt="Placeholder creator portrait" width="480" height="600" loading="lazy"><span>Fashion creator (demo) →</span></a>
+    <a class="float-card float-card--tall" href="./people/sachin-bansal/"><img src="./assets/images/people/sachin-bansal.svg" alt="Poster for Sachin Bansal" width="800" height="1000" loading="lazy"><span>Sachin Bansal →</span></a>
+    <a class="float-card" href="./people/neerja-bhanot/"><img src="./assets/images/people/neerja-bhanot.svg" alt="Poster for Neerja Bhanot" width="800" height="1000" loading="lazy"><span>Neerja Bhanot →</span></a>
+  </div>
+  <div class="powered__foot">
+    <p class="powered__copy" data-reveal>Cityfluence brings Chandigarh’s creators, businesses and audiences closer together — telling local stories, matching businesses with creators whose voice genuinely fits, and celebrating the people who made this city famous.</p>
+    <div class="powered__type powered__type--bottom" aria-hidden="true" data-reveal><span>by its</span><span>people</span></div>
+  </div>
+</section>
+
+<section class="section creators-feature" aria-labelledby="featured-title">
+  <div class="container">
+    <header class="section-head section-head--split">
+      <h2 class="section-title" id="featured-title" data-split>Meet the city’s creative powerhouses</h2>
+      <div class="section-head__aside" data-reveal>
+        <p>From food and fashion to lifestyle and entertainment, discover the creators giving our city its voice.</p>
+        <a class="pill pill--solid" href="./creators/">Explore all creators</a>
+      </div>
+    </header>
+    <p class="notice notice--demo" data-reveal><strong>Featured Creators — editorial selection.</strong> The six profiles below are demonstration placeholders while creators are invited and verified. No real accounts or statistics are shown.</p>
+    <div class="creator-grid" data-reveal-group data-creator-grid>
+      {{render:creators-featured}}
+    </div>
+    <p class="data-status" data-creator-status role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="control" aria-labelledby="control-title">
+  <div class="control__stage">
+    <div class="control__float control__float--a" data-depth="1">
+      <article class="ui-card">
+        <img src="./assets/images/cafe.svg" alt="" width="800" height="800" loading="lazy">
+        <div class="ui-card__body"><p class="ui-card__title">The cafés giving Chandigarh a new weekend ritual</p><p class="ui-card__meta">Food guide idea · Sector 35</p></div>
+      </article>
+    </div>
+    <div class="control__float control__float--b" data-depth="1.6">
+      <article class="ui-card ui-card--row">
+        <img src="./assets/images/portrait-06.svg" alt="" width="480" height="600" loading="lazy">
+        <div class="ui-card__body"><p class="ui-card__title">Photography &amp; video</p><p class="ui-card__meta">Mohali · Open to collabs</p></div>
+      </article>
+    </div>
+    <div class="control__float control__float--c" data-depth="0.8">
+      <article class="ui-card">
+        <img src="./assets/images/sector17.svg" alt="" width="800" height="800" loading="lazy">
+        <div class="ui-card__body"><p class="ui-card__title">Launch weekend at Sector 17</p><p class="ui-card__meta">Campaign idea · 3 creators</p></div>
+      </article>
+    </div>
+    <div class="control__float control__float--d" data-depth="1.3">
+      <article class="ui-card ui-card--dark">
+        <img src="./assets/images/nightlife.svg" alt="" width="800" height="800" loading="lazy">
+        <div class="ui-card__body"><p class="ui-card__title">Where Chandigarh goes after sunset</p><p class="ui-card__meta">City life</p></div>
+      </article>
+    </div>
+    <h2 class="control__title" id="control-title" data-split>Discover. Connect. Grow.</h2>
+  </div>
+
+  <div class="control__detail container">
+    <div class="control__copy">
+      <p data-reveal><strong>Discover</strong> creators whose niche, audience and content style fit your business. <strong>Connect</strong> by sharing your objective — we come back with a creator and campaign proposal.</p>
+      <p data-reveal><strong>Grow</strong> with authentic content, honest disclosure and a review based on the performance data that’s actually available.</p>
+      <a class="pill pill--solid" href="./for-businesses/#inquiry" data-reveal>Plan a campaign</a>
+    </div>
+    <div class="brief-mock" data-reveal aria-hidden="true">
+      <p class="brief-mock__head"><span>Campaign brief</span><span class="brief-mock__dot"></span></p>
+      <div class="brief-mock__row"><span class="brief-mock__label">Business</span><span>Neighbourhood café · Sector 35</span></div>
+      <div class="brief-mock__row"><span class="brief-mock__label">Goal</span><span>More weekend footfall</span></div>
+      <div class="brief-mock__row"><span class="brief-mock__label">Creators</span><span class="brief-mock__avatars"><img src="./assets/images/portrait-01.svg" alt=""><img src="./assets/images/portrait-08.svg" alt=""><img src="./assets/images/portrait-02.svg" alt=""></span></div>
+      <div class="brief-mock__row"><span class="brief-mock__label">Formats</span><span><span class="brief-mock__tag">Reels</span><span class="brief-mock__tag">Stories</span><span class="brief-mock__tag">Review</span></span></div>
+      <div class="brief-mock__send"><span>Send brief</span><svg viewBox="0 0 24 24" width="16" height="16"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<section class="section city" aria-labelledby="city-title">
+  <div class="container">
+    <header class="section-head section-head--split">
+      <h2 class="section-title section-title--xl" id="city-title" data-split>This is our city</h2>
+      <div class="section-head__aside" data-reveal>
+        <p>Food, places, fashion, nightlife, art and the people behind it all — told by locals, for locals and curious visitors.</p>
+        <a class="pill pill--solid" href="./city-life/">Explore city life</a>
+      </div>
+    </header>
+    <div class="city-bento">
+      <div class="city-bento__feature">{{render:article-city-feature}}</div>
+      <div class="city-bento__side">{{render:article-city-supporting}}</div>
+    </div>
+    <ul class="category-tiles" data-reveal-group>
+      <li data-reveal-item><a class="category-tile" href="./city-life/#food"><img src="./assets/images/food.svg" alt="" width="400" height="400" loading="lazy"><span>Food &amp; Cafés</span></a></li>
+      <li data-reveal-item><a class="category-tile" href="./city-life/#places"><img src="./assets/images/sukhna.svg" alt="" width="400" height="400" loading="lazy"><span>Places</span></a></li>
+      <li data-reveal-item><a class="category-tile" href="./city-life/#fashion"><img src="./assets/images/fashion.svg" alt="" width="400" height="400" loading="lazy"><span>Fashion &amp; Lifestyle</span></a></li>
+      <li data-reveal-item><a class="category-tile" href="./city-life/#nightlife"><img src="./assets/images/nightlife.svg" alt="" width="400" height="400" loading="lazy"><span>Nightlife</span></a></li>
+      <li data-reveal-item><a class="category-tile" href="./city-life/#culture"><img src="./assets/images/rock-garden.svg" alt="" width="400" height="400" loading="lazy"><span>Art &amp; Culture</span></a></li>
+      <li data-reveal-item><a class="category-tile" href="./people/"><img src="./assets/images/people/wamiqa-gabbi.svg" alt="" width="400" height="400" loading="lazy"><span>Famous People</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section spotlight" aria-labelledby="spotlight-title">
+  <div class="container">
+    <header class="section-head section-head--split">
+      <h2 class="section-title" id="spotlight-title" data-split>Local businesses deserve the spotlight</h2>
+      <div class="section-head__aside" data-reveal>
+        <p>From a neighbourhood café to a growing lifestyle brand, every local business has a story worth sharing.</p>
+        <a class="pill pill--solid" href="./contact/?type=business">Get your business featured</a>
+      </div>
+    </header>
+    <div class="business-grid" data-reveal-group>
+      <article class="business-card is-slot" data-reveal-item>
+        <div class="business-card__media"><img src="./assets/images/cafe.svg" alt="" width="800" height="800" loading="lazy"><span class="tag tag--demo">Open feature slot</span></div>
+        <div class="business-card__body">
+          <p class="business-card__cat">Café · Chandigarh</p>
+          <h3>Your neighbourhood café could be here</h3>
+          <p>Features are written with the business’s permission and verified details. Paid features are always labelled “Sponsored”.</p>
+          <a class="link-underline" href="./contact/?type=business">Apply for a feature</a>
+        </div>
+      </article>
+      <article class="business-card is-slot" data-reveal-item>
+        <div class="business-card__media"><img src="./assets/images/fashion.svg" alt="" width="800" height="800" loading="lazy"><span class="tag tag--demo">Open feature slot</span></div>
+        <div class="business-card__body">
+          <p class="business-card__cat">Lifestyle label · Mohali</p>
+          <h3>A homegrown brand with a story</h3>
+          <p>We profile the founders, the craft and the city that shaped the business — never invented claims or results.</p>
+          <a class="link-underline" href="./contact/?type=business">Apply for a feature</a>
+        </div>
+      </article>
+      <article class="business-card is-slot" data-reveal-item>
+        <div class="business-card__media"><img src="./assets/images/nightlife.svg" alt="" width="800" height="800" loading="lazy"><span class="tag tag--demo">Open feature slot</span></div>
+        <div class="business-card__body">
+          <p class="business-card__cat">Experience · Panchkula</p>
+          <h3>Places worth going out for</h3>
+          <p>Studios, venues and experiences across the Tricity, presented with accurate, up-to-date information.</p>
+          <a class="link-underline" href="./contact/?type=business">Apply for a feature</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section latest" aria-labelledby="latest-title">
+  <div class="container">
+    <header class="section-head section-head--split">
+      <h2 class="section-title" id="latest-title" data-split>Latest stories</h2>
+      <div class="section-head__aside" data-reveal>
+        <a class="pill pill--solid" href="./stories/">Read all stories</a>
+      </div>
+    </header>
+    <div class="story-grid" data-reveal-group>
+      {{render:articles-latest}}
+    </div>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="closing-title">
+  <div class="closing__media" aria-hidden="true"><img src="./assets/images/sukhna.svg" alt="" width="1200" height="800" loading="lazy"></div>
+  <div class="closing__card" data-reveal>
+    <span class="wordmark" aria-hidden="true">CITYFLUENCE<span class="wordmark__dot"></span></span>
+    <h2 class="closing__title" id="closing-title">Your city to create</h2>
+    <a class="pill pill--solid pill--wide" href="./contact/">Let’s collaborate</a>
+    <a class="pill pill--outline pill--wide" href="./contact/?type=creator">Join as a creator</a>
+    <p class="closing__note">Prefer to talk? Call <a class="link-underline" href="tel:+919888881405">+91 98888 81405</a></p>
+  </div>
+</section>

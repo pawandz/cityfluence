@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Aditya Pande — Art &amp; Design poster</title>
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter></defs>
+<rect width="800" height="1000" fill="#7A2E5C"/>
+<text x="400" y="560" text-anchor="middle" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="520" fill="none" stroke="#FBFAF6" stroke-opacity="0.16" stroke-width="3" letter-spacing="-20">AP</text>
+<rect x="40" y="40" width="720" height="920" fill="none" stroke="#FBFAF6" stroke-opacity="0.35" stroke-width="2"/>
+<text x="70" y="100" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="5" fill="#D4FF3A">RAISED IN CHANDIGARH</text>
+<text x="730" y="100" text-anchor="end" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" fill="#FBFAF6">BORN 1976</text>
+<g transform="translate(400 400)">
+    <path d="M-150 20 C-150 -110 -20 -150 70 -120 C160 -90 170 10 100 30 C60 42 70 90 30 110 C-40 150 -150 120 -150 20Z" fill="#FBFAF6" stroke="#121212" stroke-width="8"/>
+    <circle cx="-90" cy="-40" r="26" fill="#D4FF3A" stroke="#121212" stroke-width="5"/><circle cx="-30" cy="-95" r="26" fill="#D9757A" stroke="#121212" stroke-width="5"/><circle cx="50" cy="-80" r="26" fill="#1F4E8C" stroke="#121212" stroke-width="5"/><circle cx="-95" cy="50" r="26" fill="#D9A441" stroke="#121212" stroke-width="5"/>
+    <circle cx="40" cy="20" r="24" fill="#121212" opacity="0.15"/>
+    <path d="M150 -160 L40 60" stroke="#121212" stroke-width="16" stroke-linecap="round"/>
+    <path d="M40 60 L22 98 L60 76Z" fill="#D4FF3A" stroke="#121212" stroke-width="5" stroke-linejoin="round"/></g>
+<text x="70" y="790" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">ADITYA</text>
+<text x="70" y="886" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">PANDE</text>
+<rect x="70" y="910" width="60" height="10" fill="#D4FF3A"/>
+<text x="150" y="921" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="3" fill="#FBFAF6">ART &amp; DESIGN</text>
+<rect width="800" height="1000" filter="url(#g)"/>
+</svg>

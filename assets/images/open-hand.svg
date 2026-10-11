@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Illustration inspired by the Open Hand Monument</title>
+<defs>
+<filter id="g2"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.08 0"/></filter></defs>
+<rect width="800" height="1000" fill="#D7DDD8"/>
+<circle cx="400" cy="400" r="270" fill="#F3F0E8"/>
+<g transform="translate(400 420)">
+  <path d="M-190 -40 L-150 -210 L-100 -60 L-60 -250 L-10 -70 L40 -250 L80 -60 L130 -220 L170 -40 Q120 150 0 170 Q-120 150 -190 -40Z" fill="#121212"/>
+  <path d="M-150 -20 Q0 60 150 -20" stroke="#D4FF3A" stroke-width="10" fill="none"/>
+</g>
+<rect x="390" y="580" width="20" height="260" fill="#121212"/>
+<path d="M260 840 L540 840 L500 880 L300 880Z" fill="#2A2A28"/>
+<rect x="0" y="880" width="800" height="120" fill="#BDB8AD"/>
+<circle cx="640" cy="160" r="46" fill="#D4FF3A"/>
+<rect width="800" height="1000" filter="url(#g2)"/></svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600" role="img"><title>Placeholder portrait illustration</title>
+<rect width="480" height="600" fill="#BDB8AD"/>
+<circle cx="380" cy="120" r="90" fill="#FBFAF6" opacity="0.35"/>
+<path d="M60 600 Q70 410 240 400 Q410 410 420 600Z" fill="#B5583A"/>
+<rect x="214" y="300" width="52" height="110" rx="20" fill="#5f3b28"/>
+<ellipse cx="240" cy="230" rx="72" ry="88" fill="#5f3b28"/>
+<path d="M168 200 Q240 90 312 200 L312 180 Q240 120 168 180Z" fill="#121212"/><rect x="160" y="150" width="160" height="40" rx="14" fill="#D4FF3A"/>
+<rect x="300" y="430" width="70" height="52" rx="8" fill="#121212"/><circle cx="335" cy="456" r="14" fill="#8C877D"/>
+<path d="M200 412 L240 470 L280 412" fill="none" stroke="#FBFAF6" stroke-width="6" opacity="0.6"/></svg>

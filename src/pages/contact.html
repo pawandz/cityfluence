@@ -1,0 +1,117 @@
+<!--meta
+{"route":"/contact/","page":"contact","title":"Contact & Collaborate — Businesses, Creators, Partners | Cityfluence","description":"Start a campaign, register as a Chandigarh creator, or propose a partnership with Cityfluence. Serving Chandigarh, Mohali and Panchkula.","bodyClass":"page-contact","breadcrumb":"Contact"}
+-->
+<section class="page-hero page-hero--contact" aria-labelledby="page-title">
+  <div class="container page-hero__grid">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li aria-current="page">Contact</li></ol></nav>
+    <p class="eyebrow" data-hero="eyebrow">Contact / collaborate</p>
+    <h1 class="page-hero__title page-hero__title--xl" id="page-title" data-hero="title">
+      <span class="line"><span class="line__inner">Let’s make</span></span>
+      <span class="line"><span class="line__inner">something <span class="hl">happen.</span></span></span>
+    </h1>
+  </div>
+</section>
+
+{{> info-reach}}
+
+<section class="section section--tight contact" id="forms" aria-label="Choose how you want to work with us">
+  <div class="container">
+    <div class="path-tabs" role="tablist" aria-label="Inquiry type" data-tabs>
+      <button class="path-tab" role="tab" id="tab-business" aria-controls="panel-business" aria-selected="true" data-tab="business">
+        <span class="path-tab__n">01</span><span class="path-tab__title">Businesses</span><span class="path-tab__desc">Campaigns, promotions, sponsorships and content production.</span>
+      </button>
+      <button class="path-tab" role="tab" id="tab-creator" aria-controls="panel-creator" aria-selected="false" tabindex="-1" data-tab="creator">
+        <span class="path-tab__n">02</span><span class="path-tab__title">Creators</span><span class="path-tab__desc">Network registration and collaboration opportunities.</span>
+      </button>
+      <button class="path-tab" role="tab" id="tab-partner" aria-controls="panel-partner" aria-selected="false" tabindex="-1" data-tab="partner">
+        <span class="path-tab__n">03</span><span class="path-tab__title">Partners</span><span class="path-tab__desc">Media partnerships, events, sponsorships and more.</span>
+      </button>
+    </div>
+
+    <div class="contact__layout">
+      <div class="contact__panels">
+        <section class="contact-panel" id="panel-business" role="tabpanel" aria-labelledby="tab-business" data-panel="business">
+          <h2 class="h3 contact-panel__title">Business inquiry</h2>
+          <form class="form" data-form="business" novalidate>
+            <div class="form__grid">
+              <div class="field"><label class="field__label" for="cb-business">Business name *</label><input class="field__input" id="cb-business" name="businessName" required autocomplete="organization" maxlength="120"></div>
+              <div class="field"><label class="field__label" for="cb-name">Your name *</label><input class="field__input" id="cb-name" name="contactName" required autocomplete="name" maxlength="120"></div>
+              <div class="field"><label class="field__label" for="cb-email">Email *</label><input class="field__input" id="cb-email" name="email" type="email" required autocomplete="email" maxlength="160"></div>
+              <div class="field"><label class="field__label" for="cb-phone">Phone <span class="is-muted">(optional)</span></label><input class="field__input" id="cb-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+()\-\s]{7,20}" data-pattern-message="Enter a valid phone number."></div>
+              <div class="field"><label class="field__label" for="cb-interest">Interested in *</label>
+                <select class="field__input" id="cb-interest" name="service" required><option value="">Select…</option><option>Creator campaign</option><option>Promotion</option><option>Sponsorship</option><option>Content production</option><option>Business feature</option><option>Other</option></select></div>
+              <div class="field"><label class="field__label" for="cb-location">Location *</label>
+                <select class="field__input" id="cb-location" name="location" required><option value="">Select…</option><option>Chandigarh</option><option>Mohali</option><option>Panchkula</option><option>Elsewhere</option></select></div>
+              <div class="field field--full"><label class="field__label" for="cb-creator">Creator of interest</label><input class="field__input" id="cb-creator" name="creatorOfInterest" data-prefill="creator" readonly placeholder="Optional — set from a creator profile"></div>
+              <div class="field field--full"><label class="field__label" for="cb-message">What would you like to achieve? *</label><textarea class="field__input" id="cb-message" name="message" rows="4" required minlength="10" maxlength="2000"></textarea></div>
+            </div>
+            <div class="form__hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+            <div class="field field--check"><input type="checkbox" id="consent-b" name="consent" value="yes" required><label for="consent-b">I agree that Cityfluence may use these details to respond, as described in the <a class="link-underline" href="{{root}}privacy/">Privacy Policy</a>. *</label></div>
+            <div class="form__actions"><button class="btn btn--ink btn--large" type="submit" data-submit><span data-submit-label>Send inquiry</span></button><p class="form__hint">For detailed campaign briefs, use the <a class="link-underline" href="{{root}}for-businesses/#inquiry">full campaign form</a>.</p></div>
+            <div class="form__status" data-form-status role="status" aria-live="polite" tabindex="-1"></div>
+          </form>
+        </section>
+
+        <section class="contact-panel" id="panel-creator" role="tabpanel" aria-labelledby="tab-creator" data-panel="creator">
+          <h2 class="h3 contact-panel__title">Creator registration</h2>
+          <form class="form" data-form="creator" novalidate>
+            <div class="form__grid">
+              <div class="field"><label class="field__label" for="cc-name">Name *</label><input class="field__input" id="cc-name" name="name" required autocomplete="name" maxlength="120"></div>
+              <div class="field"><label class="field__label" for="cc-email">Email *</label><input class="field__input" id="cc-email" name="email" type="email" required autocomplete="email" maxlength="160"></div>
+              <div class="field"><label class="field__label" for="cc-platform">Main platform *</label>
+                <select class="field__input" id="cc-platform" name="platform" required><option value="">Select…</option><option>Instagram</option><option>YouTube</option><option>Other</option></select></div>
+              <div class="field"><label class="field__label" for="cc-handle">Profile URL *</label><input class="field__input" id="cc-handle" name="profileUrl" type="url" required placeholder="https://www.instagram.com/yourhandle" inputmode="url"></div>
+              <div class="field"><label class="field__label" for="cc-niche">Primary niche *</label>
+                <select class="field__input" id="cc-niche" name="niche" required><option value="">Select…</option>{{render:niche-options}}<option>Other</option></select></div>
+              <div class="field"><label class="field__label" for="cc-location">Based in *</label>
+                <select class="field__input" id="cc-location" name="location" required><option value="">Select…</option><option>Chandigarh</option><option>Mohali</option><option>Panchkula</option></select></div>
+              <div class="field field--full"><label class="field__label" for="cc-content">Content you create</label><input class="field__input" id="cc-content" name="contentTypes" placeholder="e.g. Reels, food reviews, event coverage" maxlength="200"></div>
+              <div class="field field--full"><label class="field__label" for="cc-about">Tell us about your work *</label><textarea class="field__input" id="cc-about" name="message" rows="4" required minlength="20" maxlength="2000" placeholder="Your style, audience, and the brands you’d love to work with"></textarea></div>
+            </div>
+            <div class="form__hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+            <div class="field field--check"><input type="checkbox" id="consent-c" name="consent" value="yes" required><label for="consent-c">I confirm the profile is mine, and agree that Cityfluence may contact me about the network as described in the <a class="link-underline" href="{{root}}privacy/">Privacy Policy</a>. Nothing is published without my approval. *</label></div>
+            <div class="form__actions"><button class="btn btn--ink btn--large" type="submit" data-submit><span data-submit-label>Register interest</span></button></div>
+            <div class="form__status" data-form-status role="status" aria-live="polite" tabindex="-1"></div>
+          </form>
+        </section>
+
+        <section class="contact-panel" id="panel-partner" role="tabpanel" aria-labelledby="tab-partner" data-panel="partner">
+          <h2 class="h3 contact-panel__title">Partnership proposal</h2>
+          <form class="form" data-form="partner" novalidate>
+            <div class="form__grid">
+              <div class="field"><label class="field__label" for="cp-org">Organisation *</label><input class="field__input" id="cp-org" name="organisation" required autocomplete="organization" maxlength="120"></div>
+              <div class="field"><label class="field__label" for="cp-name">Your name *</label><input class="field__input" id="cp-name" name="name" required autocomplete="name" maxlength="120"></div>
+              <div class="field"><label class="field__label" for="cp-email">Email *</label><input class="field__input" id="cp-email" name="email" type="email" required autocomplete="email" maxlength="160"></div>
+              <div class="field"><label class="field__label" for="cp-type">Partnership type *</label>
+                <select class="field__input" id="cp-type" name="partnershipType" required><option value="">Select…</option><option>Media partnership</option><option>Event</option><option>Sponsorship</option><option>Story tip / editorial</option><option>Other</option></select></div>
+              <div class="field field--full"><label class="field__label" for="cp-web">Website</label><input class="field__input" id="cp-web" name="website" type="url" placeholder="https://" inputmode="url"></div>
+              <div class="field field--full"><label class="field__label" for="cp-message">Your proposal *</label><textarea class="field__input" id="cp-message" name="message" rows="5" required minlength="20" maxlength="2500"></textarea></div>
+            </div>
+            <div class="form__hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+            <div class="field field--check"><input type="checkbox" id="consent-p" name="consent" value="yes" required><label for="consent-p">I agree that Cityfluence may use these details to respond, as described in the <a class="link-underline" href="{{root}}privacy/">Privacy Policy</a>. *</label></div>
+            <div class="form__actions"><button class="btn btn--ink btn--large" type="submit" data-submit><span data-submit-label>Send proposal</span></button></div>
+            <div class="form__status" data-form-status role="status" aria-live="polite" tabindex="-1"></div>
+          </form>
+        </section>
+      </div>
+
+      <aside class="contact__aside">
+        <div class="contact-card">
+          <h2 class="h3">Elsewhere</h2>
+          <p class="field__label">Social</p>
+          {{render:social-links}}
+          <p class="field__label">Area</p>
+          <p>Chandigarh · Mohali · Panchkula</p>
+        </div>
+        <div class="contact-card contact-card--lime">
+          <h2 class="h3">What happens next?</h2>
+          <ol class="mini-steps"><li>We read every message ourselves.</li><li>If it’s a fit, we reply with next steps.</li><li>Nothing is published without permission.</li></ol>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+{{> info-facts}}
+
+{{> info-faq}}

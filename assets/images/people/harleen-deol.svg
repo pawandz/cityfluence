@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Harleen Deol — Cricket poster</title>
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter></defs>
+<rect width="800" height="1000" fill="#2F6B3F"/>
+<text x="400" y="560" text-anchor="middle" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="520" fill="none" stroke="#FBFAF6" stroke-opacity="0.16" stroke-width="3" letter-spacing="-20">HD</text>
+<rect x="40" y="40" width="720" height="920" fill="none" stroke="#FBFAF6" stroke-opacity="0.35" stroke-width="2"/>
+<text x="70" y="100" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="5" fill="#D4FF3A">MADE IN CHANDIGARH</text>
+<text x="730" y="100" text-anchor="end" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" fill="#FBFAF6">BORN 1998</text>
+<g transform="translate(400 400)">
+    <circle r="120" fill="#FBFAF6"/>
+    <circle r="120" fill="none" stroke="#121212" stroke-width="10"/>
+    <path d="M-48 -110 C-12 -40 -12 40 -48 110 M48 -110 C12 -40 12 40 48 110" fill="none" stroke="#B5583A" stroke-width="8" stroke-dasharray="14 10"/>
+    <g fill="#121212"><rect x="150" y="-150" width="14" height="300" rx="4"/><rect x="180" y="-150" width="14" height="300" rx="4"/><rect x="120" y="-150" width="14" height="300" rx="4"/><rect x="112" y="-164" width="90" height="10" rx="5" fill="#D4FF3A"/></g></g>
+<text x="70" y="790" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">HARLEEN</text>
+<text x="70" y="886" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">DEOL</text>
+<rect x="70" y="910" width="60" height="10" fill="#D4FF3A"/>
+<text x="150" y="921" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="3" fill="#FBFAF6">CRICKET</text>
+<rect width="800" height="1000" filter="url(#g)"/>
+</svg>

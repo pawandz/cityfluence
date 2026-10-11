@@ -1,0 +1,17 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+.container,
+.container-wide {
+  width: 100%;
+  max-width: map.get($containers, 'default');
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.container-wide { max-width: map.get($containers, 'wide'); }
+.narrow { max-width: map.get($containers, 'narrow'); }
+
+.section {
+  padding-block: var(--section-y);
+  &--tight { padding-block: calc(var(--section-y) * 0.5); }
+}

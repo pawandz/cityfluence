@@ -1,0 +1,57 @@
+@use '../abstracts' as *;
+
+html {
+  background: color('ivory');
+  scroll-behavior: smooth;
+  @include reduced-motion { scroll-behavior: auto; }
+}
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: color('ink');
+  background: color('ivory');
+  overflow-x: clip;
+}
+
+::selection { background: color('lime'); color: color('ink'); }
+
+main { display: block; outline: none; }
+
+a, button, input, select, textarea, summary { @include focus-ring; }
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: z('skip');
+  padding: 0.75rem 1.25rem;
+  background: color('ink');
+  color: color('paper');
+  border-radius: var(--radius-pill);
+  transform: translateY(-200%);
+  transition: transform var(--dur-fast) var(--ease-out);
+  &:focus { transform: none; }
+}
+
+// Hero parts start hidden only while the motion system is expected to run.
+// The inline <head> script adds .motion-fallback after 2.5s if JS never does,
+// and reduced-motion users never see the hidden state.
+@media (prefers-reduced-motion: no-preference) {
+  html.js:not(.motion-fallback) [data-hero]:not(.hero),
+  html.js:not(.motion-fallback) .site-header__inner > * { visibility: hidden; }
+}
+
+.split-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+.split-word__inner { display: inline-block; }

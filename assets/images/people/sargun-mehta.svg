@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Sargun Mehta — Film &amp; Television poster</title>
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter></defs>
+<rect width="800" height="1000" fill="#1B2A4A"/>
+<text x="400" y="560" text-anchor="middle" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="520" fill="none" stroke="#FBFAF6" stroke-opacity="0.16" stroke-width="3" letter-spacing="-20">SM</text>
+<rect x="40" y="40" width="720" height="920" fill="none" stroke="#FBFAF6" stroke-opacity="0.35" stroke-width="2"/>
+<text x="70" y="100" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="5" fill="#D4FF3A">MADE IN CHANDIGARH</text>
+<text x="730" y="100" text-anchor="end" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" fill="#FBFAF6">BORN 1988</text>
+<g transform="translate(400 400)">
+    <rect x="-150" y="-60" width="300" height="200" rx="14" fill="#FBFAF6"/>
+    <rect x="-150" y="-60" width="300" height="200" rx="14" fill="none" stroke="#121212" stroke-width="10"/>
+    <g transform="rotate(-14 -150 -60)"><rect x="-150" y="-130" width="300" height="56" rx="8" fill="#121212"/>
+    <path d="M-130 -130 l30 0 l-20 56 l-30 0z" fill="#D4FF3A"/><path d="M-70 -130 l30 0 l-20 56 l-30 0z" fill="#D4FF3A"/><path d="M-10 -130 l30 0 l-20 56 l-30 0z" fill="#D4FF3A"/><path d="M50 -130 l30 0 l-20 56 l-30 0z" fill="#D4FF3A"/><path d="M110 -130 l30 0 l-20 56 l-30 0z" fill="#D4FF3A"/></g>
+    <rect x="-150" y="-40" width="300" height="10" fill="#121212"/>
+    <circle cx="0" cy="55" r="44" fill="#D4FF3A" stroke="#121212" stroke-width="8"/><path d="M-12 32 L22 55 L-12 78Z" fill="#121212"/></g>
+<text x="70" y="790" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">SARGUN</text>
+<text x="70" y="886" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">MEHTA</text>
+<rect x="70" y="910" width="60" height="10" fill="#D4FF3A"/>
+<text x="150" y="921" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="3" fill="#FBFAF6">FILM &amp; TELEVISION</text>
+<rect width="800" height="1000" filter="url(#g)"/>
+</svg>

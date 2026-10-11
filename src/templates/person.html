@@ -1,0 +1,101 @@
+<article class="person" style="--field: {{fieldColour}}">
+  <header class="person-hero">
+    <div class="container person-hero__grid">
+      <div class="person-hero__copy">
+        <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="{{root}}">Home</a></li><li><a href="{{root}}people/">Famous People</a></li><li aria-current="page">{{personName}}</li></ol></nav>
+        <p class="eyebrow eyebrow--lime" data-hero="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>{{fieldLabel}} · {{originLabel}}</p>
+        <h1 class="person-hero__name" data-hero="title">{{personNameLines}}</h1>
+        <p class="person-hero__role" data-hero="lede">{{personRole}}</p>
+        <ul class="person-hero__chips" data-hero="ctas">
+          <li><span>Born</span><time datetime="{{bornIso}}">{{bornLabel}}</time></li>
+          {{originChip}}
+          {{diedChip}}
+        </ul>
+      </div>
+      <figure class="person-hero__poster" data-hero="collage">
+        <img src="{{root}}assets/images/people/{{slug}}.svg" alt="Typographic poster for {{personName}}" width="800" height="1000" fetchpriority="high">
+      </figure>
+    </div>
+  </header>
+
+  <section class="person-stats" aria-label="Key numbers">
+    <div class="container">
+      <ul class="person-stats__list" data-reveal-group>{{statsHtml}}</ul>
+    </div>
+  </section>
+
+  <div class="container person-body">
+    <div class="person-main">
+      <p class="person-intro" data-reveal>{{personIntro}}</p>
+      {{noteHtml}}
+      <div class="prose person-story">{{storyHtml}}</div>
+
+      <section class="person-timeline" aria-labelledby="timeline-title">
+        <h2 class="section-title section-title--sm" id="timeline-title" data-split>Timeline</h2>
+        <ol class="timeline" data-reveal-group>{{timelineHtml}}</ol>
+      </section>
+
+      {{honoursHtml}}
+
+      <section class="person-faq" aria-labelledby="faq-title">
+        <h2 class="section-title section-title--sm" id="faq-title" data-split>Quick questions</h2>
+        <div class="faq">{{faqHtml}}</div>
+      </section>
+    </div>
+
+    <aside class="person-aside">
+      <div class="fact-card">
+        <h2 class="fact-card__title">Quick facts</h2>
+        <dl>
+          <div><dt>Name</dt><dd>{{personName}}</dd></div>
+          <div><dt>Field</dt><dd>{{fieldLabel}}</dd></div>
+          <div><dt>Born</dt><dd>{{bornFact}}</dd></div>
+          {{diedFact}}
+          <div><dt>Known for</dt><dd>{{knownForList}}</dd></div>
+        </dl>
+      </div>
+      <div class="fact-card fact-card--lime">
+        <h2 class="fact-card__title">Chandigarh roots</h2>
+        <p>{{personRoots}}</p>
+      </div>
+      <div class="fact-card fact-card--quiet">
+        <h2 class="fact-card__title">Sources</h2>
+        <ul class="source-list">
+          <li><a class="link-underline" href="{{wikiUrl}}" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+          <li><a class="link-underline" href="https://www.wikidata.org/wiki/{{wikidata}}" target="_blank" rel="noopener noreferrer">Wikidata ({{wikidata}})</a></li>
+          {{pantheonItem}}
+        </ul>
+        <p class="small is-muted">Facts reviewed <time datetime="{{reviewedIso}}">{{reviewedLabel}}</time>. Spotted an error? <a class="link-underline" href="{{root}}contact/?type=partner">Tell us</a>.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="cta-banner person-cta" aria-labelledby="cta-title">
+    <div class="container cta-banner__inner">
+      <p class="eyebrow eyebrow--lime" data-reveal>The next generation</p>
+      <h2 class="cta-banner__title" id="cta-title" data-split>Chandigarh makes stars.<br><span class="hl">Meet the ones rising now.</span></h2>
+      <div class="cta-banner__foot" data-reveal>
+        <p>From {{personFirst}}’s hometown to your brand: discover the Tricity’s creators, or put local talent to work on your next campaign.</p>
+        <div class="cta-banner__ctas">
+          <a class="btn btn--lime btn--large" href="{{root}}creators/">Discover creators{{arrow}}</a>
+          <a class="btn btn--ghost-light btn--large" href="{{root}}for-businesses/">Start a campaign</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section person-related" aria-labelledby="related-title">
+    <div class="container">
+      <header class="section-head section-head--split">
+        <h2 class="section-title section-title--sm" id="related-title" data-split>More from Chandigarh</h2>
+        <div class="section-head__aside"><a class="btn btn--ink" href="{{root}}people/">All famous people{{arrow}}</a></div>
+      </header>
+      <div class="people-grid people-grid--related" data-reveal-group>{{relatedHtml}}</div>
+      <nav class="person-pager" aria-label="More profiles">
+        <a class="person-pager__link" href="{{root}}people/{{prevSlug}}/" rel="prev"><span>Previous</span>{{prevName}}</a>
+        <a class="person-pager__link person-pager__link--next" href="{{root}}people/{{nextSlug}}/" rel="next"><span>Next</span>{{nextName}}</a>
+      </nav>
+      <p class="person-disclaimer">This is an independent editorial profile compiled from public sources. Cityfluence is not affiliated with {{personName}}, and nothing on this page implies endorsement.</p>
+    </div>
+  </section>
+</article>

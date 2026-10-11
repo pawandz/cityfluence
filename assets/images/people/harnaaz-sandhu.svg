@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Harnaaz Sandhu — Pageants &amp; Film poster</title>
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter></defs>
+<rect width="800" height="1000" fill="#B23A6B"/>
+<text x="400" y="560" text-anchor="middle" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="520" fill="none" stroke="#FBFAF6" stroke-opacity="0.16" stroke-width="3" letter-spacing="-20">HS</text>
+<rect x="40" y="40" width="720" height="920" fill="none" stroke="#FBFAF6" stroke-opacity="0.35" stroke-width="2"/>
+<text x="70" y="100" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="5" fill="#D4FF3A">RAISED IN CHANDIGARH</text>
+<text x="730" y="100" text-anchor="end" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" fill="#FBFAF6">BORN 2000</text>
+<g transform="translate(400 400)">
+    <path d="M-150 60 L-130 -80 L-70 -10 L0 -120 L70 -10 L130 -80 L150 60 Z" fill="#D4FF3A" stroke="#121212" stroke-width="10" stroke-linejoin="round"/>
+    <rect x="-155" y="60" width="310" height="44" rx="10" fill="#121212"/>
+    <circle cx="-130" cy="-98" r="16" fill="#FBFAF6" stroke="#121212" stroke-width="6"/><circle cx="0" cy="-138" r="16" fill="#FBFAF6" stroke="#121212" stroke-width="6"/><circle cx="130" cy="-98" r="16" fill="#FBFAF6" stroke="#121212" stroke-width="6"/>
+    <path d="M-180 -168 L-174 -156 L-162 -150 L-174 -144 L-180 -132 L-186 -144 L-198 -150 L-186 -156Z" fill="#FBFAF6"/><path d="M175 -178 L181 -166 L193 -160 L181 -154 L175 -142 L169 -154 L157 -160 L169 -166Z" fill="#FBFAF6"/><path d="M190 2 L196 14 L208 20 L196 26 L190 38 L184 26 L172 20 L184 14Z" fill="#FBFAF6"/><path d="M-195 22 L-189 34 L-177 40 L-189 46 L-195 58 L-201 46 L-213 40 L-201 34Z" fill="#FBFAF6"/></g>
+<text x="70" y="790" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">HARNAAZ</text>
+<text x="70" y="886" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">SANDHU</text>
+<rect x="70" y="910" width="60" height="10" fill="#D4FF3A"/>
+<text x="150" y="921" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="3" fill="#FBFAF6">PAGEANTS &amp; FILM</text>
+<rect width="800" height="1000" filter="url(#g)"/>
+</svg>

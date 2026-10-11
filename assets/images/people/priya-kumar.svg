@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img"><title>Priya Kumar — Writing &amp; Ideas poster</title>
+<defs><filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.09 0"/></filter></defs>
+<rect width="800" height="1000" fill="#6B4E2E"/>
+<text x="400" y="560" text-anchor="middle" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="520" fill="none" stroke="#FBFAF6" stroke-opacity="0.16" stroke-width="3" letter-spacing="-20">PK</text>
+<rect x="40" y="40" width="720" height="920" fill="none" stroke="#FBFAF6" stroke-opacity="0.35" stroke-width="2"/>
+<text x="70" y="100" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="5" fill="#D4FF3A">MADE IN CHANDIGARH</text>
+<text x="730" y="100" text-anchor="end" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="22" letter-spacing="4" fill="#FBFAF6">BORN 1974</text>
+<g transform="translate(400 400)">
+    <path d="M-170 -100 Q-85 -140 0 -100 V130 Q-85 90 -170 130Z" fill="#FBFAF6" stroke="#121212" stroke-width="8"/>
+    <path d="M170 -100 Q85 -140 0 -100 V130 Q85 90 170 130Z" fill="#FBFAF6" stroke="#121212" stroke-width="8"/>
+    <path d="M-140 -60 Q-85 -78 -30 -60" stroke="#121212" stroke-opacity="0.35" stroke-width="5" fill="none"/><path d="M-140 -25 Q-85 -43 -30 -25" stroke="#121212" stroke-opacity="0.35" stroke-width="5" fill="none"/><path d="M-140 10 Q-85 -8 -30 10" stroke="#121212" stroke-opacity="0.35" stroke-width="5" fill="none"/><path d="M-140 45 Q-85 27 -30 45" stroke="#121212" stroke-opacity="0.35" stroke-width="5" fill="none"/>
+    <path d="M60 60 L150 -140 L175 -128 L85 72 L55 82Z" fill="#D4FF3A" stroke="#121212" stroke-width="6" stroke-linejoin="round"/></g>
+<text x="70" y="790" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">PRIYA</text>
+<text x="70" y="886" font-family="'Arial Black', 'Archivo Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="92" letter-spacing="-2" fill="#FBFAF6">KUMAR</text>
+<rect x="70" y="910" width="60" height="10" fill="#D4FF3A"/>
+<text x="150" y="921" font-family="Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="3" fill="#FBFAF6">WRITING &amp; IDEAS</text>
+<rect width="800" height="1000" filter="url(#g)"/>
+</svg>

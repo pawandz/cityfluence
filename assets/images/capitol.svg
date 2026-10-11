@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" width="900" height="1100" role="img"><title>Illustration inspired by the Capitol Complex, Chandigarh</title>
+<defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DDCF"/><stop offset="1" stop-color="#F3F0E8"/></linearGradient>
+<filter id="g1"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.08 0"/></filter></defs>
+<rect width="900" height="1100" fill="url(#sky)"/>
+<circle cx="640" cy="250" r="120" fill="#D4FF3A"/>
+<path d="M0 560 L140 470 L260 520 L400 430 L560 500 L700 440 L900 520 L900 640 L0 640Z" fill="#8FA08A" opacity="0.45"/>
+<rect x="90" y="620" width="720" height="240" fill="#BDB8AD"/>
+<rect x="120" y="640" width="10" height="200" fill="#8C877D"/><rect x="156" y="640" width="10" height="200" fill="#8C877D"/><rect x="192" y="640" width="10" height="200" fill="#8C877D"/><rect x="228" y="640" width="10" height="200" fill="#8C877D"/><rect x="264" y="640" width="10" height="200" fill="#8C877D"/><rect x="300" y="640" width="10" height="200" fill="#8C877D"/><rect x="336" y="640" width="10" height="200" fill="#8C877D"/><rect x="372" y="640" width="10" height="200" fill="#8C877D"/><rect x="408" y="640" width="10" height="200" fill="#8C877D"/><rect x="444" y="640" width="10" height="200" fill="#8C877D"/><rect x="480" y="640" width="10" height="200" fill="#8C877D"/><rect x="516" y="640" width="10" height="200" fill="#8C877D"/><rect x="552" y="640" width="10" height="200" fill="#8C877D"/><rect x="588" y="640" width="10" height="200" fill="#8C877D"/><rect x="624" y="640" width="10" height="200" fill="#8C877D"/><rect x="660" y="640" width="10" height="200" fill="#8C877D"/><rect x="696" y="640" width="10" height="200" fill="#8C877D"/><rect x="732" y="640" width="10" height="200" fill="#8C877D"/><rect x="768" y="640" width="10" height="200" fill="#8C877D"/><rect x="110" y="660" width="680" height="6" fill="#8C877D" opacity="0.6"/><rect x="110" y="700" width="680" height="6" fill="#8C877D" opacity="0.6"/><rect x="110" y="740" width="680" height="6" fill="#8C877D" opacity="0.6"/><rect x="110" y="780" width="680" height="6" fill="#8C877D" opacity="0.6"/><rect x="110" y="820" width="680" height="6" fill="#8C877D" opacity="0.6"/>
+<path d="M300 620 C300 470 290 400 330 330 L470 330 C510 400 500 470 500 620Z" fill="#D3C8B4"/>
+<path d="M300 620 C300 470 290 400 330 330 L360 330 C330 400 330 470 340 620Z" fill="#8C877D" opacity="0.35"/>
+<rect x="318" y="316" width="164" height="18" fill="#2A2A28"/>
+<path d="M560 620 L640 520 L720 620Z" fill="#2A2A28"/>
+<path d="M60 600 Q250 540 450 600 Q650 540 840 600 L840 618 L60 618Z" fill="#121212"/>
+<rect x="120" y="618" width="12" height="70" fill="#121212"/><rect x="770" y="618" width="12" height="70" fill="#121212"/>
+<rect x="420" y="740" width="70" height="120" fill="#B5583A"/>
+<rect x="0" y="860" width="900" height="240" fill="#D7DDD8"/>
+<g opacity="0.35"><rect x="100" y="880" width="600" height="3" fill="#8C877D"/><rect x="130" y="902" width="560" height="3" fill="#8C877D"/><rect x="160" y="924" width="520" height="3" fill="#8C877D"/><rect x="100" y="946" width="480" height="3" fill="#8C877D"/><rect x="130" y="968" width="440" height="3" fill="#8C877D"/><rect x="160" y="990" width="400" height="3" fill="#8C877D"/><rect x="100" y="1012" width="360" height="3" fill="#8C877D"/><rect x="130" y="1034" width="320" height="3" fill="#8C877D"/><rect x="160" y="1056" width="280" height="3" fill="#8C877D"/></g>
+<rect x="420" y="880" width="70" height="60" fill="#B5583A" opacity="0.35"/>
+<rect width="900" height="1100" filter="url(#g1)"/></svg>

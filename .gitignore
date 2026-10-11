@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.dev.vars
+.wrangler/
+serverless/**/node_modules/
+serverless/**/wrangler.toml

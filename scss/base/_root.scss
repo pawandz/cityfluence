@@ -1,0 +1,21 @@
+@use 'sass:map';
+@use '../abstracts' as *;
+
+:root {
+  @each $name, $value in $colors { --c-#{$name}: #{$value}; }
+  @each $name, $pair in $type-scale { --fs-#{$name}: #{fluid(nth($pair, 1), nth($pair, 2))}; }
+  @each $name, $value in $space { --space-#{$name}: #{$value}; }
+  @each $name, $value in $ease { --ease-#{$name}: #{$value}; }
+  @each $name, $value in $duration { --dur-#{$name}: #{$value}; }
+  @each $name, $value in $radius { --radius-#{$name}: #{$value}; }
+  @each $name, $value in $shadows { --shadow-#{$name}: #{$value}; }
+
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+  --gutter: #{fluid(1, 2.5)};
+  --section-y: #{fluid(4.5, 10)};
+  --header-h: 4.5rem;
+  --grid-gap: #{fluid(1, 1.75)};
+
+  color-scheme: light;
+}

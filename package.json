@@ -1,0 +1,25 @@
+{
+  "name": "cityfluence",
+  "version": "0.1.0",
+  "scripts": {
+    "build:css": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
+    "watch:css": "sass scss/main.scss css/main.css --watch",
+    "build:html": "node scripts/build.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "build": "npm run build:css && npm run build:html",
+    "serve": "node scripts/serve.mjs",
+    "check": "node scripts/check-links.mjs",
+    "generate:art": "node scripts/generate-art.mjs"
+  },
+  "license": "UNLICENSED",
+  "description": "Cityfluence — Chandigarh creator discovery and city culture platform (static site).",
+  "devDependencies": {
+    "sass": "1.77.8"
+  },
+  "dependencies": {
+    "gsap": "3.12.5",
+    "lenis": "1.1.13"
+  },
+  "private": true,
+  "type": "module"
+}
