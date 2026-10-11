@@ -4,7 +4,9 @@
 .page-hero {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(2.5rem, 7vw, 6rem) clamp(2.5rem, 6vw, 5rem);
+  // Runs under the fixed header (see layout/_header.scss).
+  margin-top: calc(-1 * var(--header-space));
+  padding-block: calc(var(--header-space) + clamp(2.5rem, 7vw, 6rem)) clamp(2.5rem, 6vw, 5rem);
   border-bottom: 1px solid color('line');
 
   &__grid {

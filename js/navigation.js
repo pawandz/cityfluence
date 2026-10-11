@@ -2,18 +2,77 @@ import { getLenis } from './animations.js';
 
 const FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])';
 
+// Past this many pixels the header docks to the top and shows its backdrop.
+const SCROLL_THRESHOLD = 80;
+
+/** 'dark' | 'light' for the first opaque background at or above `el`. */
+function themeOf(el) {
+  for (; el && el !== document.documentElement; el = el.parentElement) {
+    if (el.dataset.headerTheme) return el.dataset.headerTheme;
+    const m = getComputedStyle(el).backgroundColor.match(/[\d.]+/g);
+    if (m && (m[3] === undefined || Number(m[3]) > 0.5)) {
+      const [r, g, b] = m.map(Number);
+      return 0.2126 * r + 0.7152 * g + 0.0722 * b < 140 ? 'dark' : 'light';
+    }
+  }
+  return 'light';
+}
+
 function initHeader() {
   const header = document.querySelector('[data-header]');
   if (!header) return;
   let ticking = false;
   const update = () => {
-    header.classList.toggle('is-scrolled', window.scrollY > 24);
+    header.classList.toggle('is-scrolled', window.scrollY > SCROLL_THRESHOLD);
+    // Sample what sits under the middle of the header bar.
+    const y = header.getBoundingClientRect().bottom / 2;
+    const below = document.elementsFromPoint(window.innerWidth / 2, y).find((el) => !header.contains(el));
+    const theme = themeOf(below);
+    header.classList.toggle('theme-dark', theme === 'dark');
+    header.classList.toggle('theme-light', theme !== 'dark');
     ticking = false;
   };
-  window.addEventListener('scroll', () => {
+  const queue = () => {
     if (!ticking) { requestAnimationFrame(update); ticking = true; }
-  }, { passive: true });
+  };
+  window.addEventListener('scroll', queue, { passive: true });
+  window.addEventListener('resize', queue);
   update();
+}
+
+/** A pill that slides between primary nav links on hover. */
+function initNavIndicator() {
+  const nav = document.querySelector('[data-nav]');
+  const indicator = nav?.querySelector('[data-nav-indicator]');
+  if (!indicator) return;
+  const links = [...nav.querySelectorAll('.nav__link')];
+  let current = null;
+
+  const moveTo = (link) => {
+    const n = nav.getBoundingClientRect();
+    const r = link.getBoundingClientRect();
+    // Appearing from hidden: jump into place, then fade and scale in.
+    indicator.classList.toggle('is-jump', !current);
+    indicator.style.setProperty('--ind-x', `${r.left - n.left}px`);
+    indicator.style.setProperty('--ind-y', `${r.top - n.top}px`);
+    indicator.style.setProperty('--ind-w', `${r.width}px`);
+    indicator.style.setProperty('--ind-h', `${r.height}px`);
+    current?.classList.remove('is-hovered');
+    link.classList.add('is-hovered');
+    current = link;
+    requestAnimationFrame(() => indicator.classList.add('is-visible'));
+  };
+  const hide = () => {
+    indicator.classList.remove('is-visible');
+    current?.classList.remove('is-hovered');
+    current = null;
+  };
+
+  nav.classList.add('has-indicator');
+  links.forEach((link) => link.addEventListener('mouseenter', () => moveTo(link)));
+  nav.querySelector('.nav__list').addEventListener('mouseleave', hide);
+  // Leaving onto the Info pill should also hide it.
+  nav.querySelector('.nav__pill')?.addEventListener('mouseenter', hide);
 }
 
 function initMobileMenu() {
@@ -98,6 +157,7 @@ function initAnchors() {
 
 export function initNavigation() {
   initHeader();
+  initNavIndicator();
   initMobileMenu();
   initAnchors();
 }

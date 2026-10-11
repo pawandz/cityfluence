@@ -14,7 +14,9 @@
   --font-body: #{$font-body};
   --gutter: #{fluid(1, 2.5)};
   --section-y: #{fluid(4.5, 10)};
-  --header-h: 4.5rem;
+  --header-h: 6rem;
+  --header-offset: 0.6rem;
+  --header-space: calc(var(--header-h) + var(--header-offset));
   --grid-gap: #{fluid(1, 1.75)};
 
   color-scheme: light;

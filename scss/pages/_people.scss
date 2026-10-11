@@ -108,7 +108,8 @@
 .person-hero {
   position: relative;
   overflow: hidden;
-  padding-block: clamp(2rem, 6vw, 5rem);
+  margin-top: calc(-1 * var(--header-space));
+  padding-block: calc(var(--header-space) + clamp(2rem, 6vw, 5rem)) clamp(2rem, 6vw, 5rem);
   background: var(--field, var(--c-ink));
   color: color('paper');
   &::before {

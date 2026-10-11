@@ -28,9 +28,11 @@
 </head>
 <body class="page-stories">
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header" data-header>
+<header class="site-header theme-light" data-header>
+  <div class="site-header__backdrop" aria-hidden="true"></div>
   <div class="site-header__inner">
-    <nav class="nav" aria-label="Primary">
+    <nav class="nav" aria-label="Primary" data-nav>
+      <span class="nav__indicator" aria-hidden="true" data-nav-indicator></span>
       <ul class="nav__list">
         <li><a class="nav__link" href="../creators/" >Creators</a></li>
         <li><a class="nav__link" href="../people/" >People</a></li>
@@ -40,16 +42,19 @@
         <li><a class="pill pill--outline nav__pill" href="../info/" >Info</a></li>
       </ul>
     </nav>
-    <a class="wordmark" href="../" aria-label="Cityfluence — home">CITYFLUENCE<span class="wordmark__dot" aria-hidden="true"></span></a>
-    <div class="site-header__actions">
-      <a class="pill pill--outline pill--search" href="../creators/#f-search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Find a creator</a>
-      <a class="pill pill--outline" href="../about/" >About</a>
-      <a class="pill pill--solid" href="../contact/" >Let’s collaborate</a>
-    </div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
-      <span class="menu-toggle__label">Menu</span>
+      <span class="menu-toggle__label visually-hidden">Menu</span>
       <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
     </button>
+    <a class="wordmark" href="../" aria-label="Cityfluence — home">
+      <span class="wordmark__full" aria-hidden="true">CITYFLUENCE<span class="wordmark__dot"></span></span>
+      <span class="wordmark__mark" aria-hidden="true">C<span class="wordmark__dot"></span></span>
+    </a>
+    <div class="site-header__actions">
+      <a class="pill pill--outline pill--search" href="../creators/#f-search"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Find a creator</a>
+      <a class="pill pill--outline pill--about" href="../about/" >About</a>
+      <a class="pill pill--solid" href="../contact/" >Let’s collaborate</a>
+    </div>
   </div>
 </header>
 <div class="mobile-menu" id="mobile-menu" data-mobile-menu hidden>
