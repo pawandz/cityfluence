@@ -1,8 +1,7 @@
 @use '../abstracts' as *;
 
 // Three-part header: links + pill (left) · centred wordmark · pills (right).
-// On pages with body.has-overlay-header it floats transparent over the hero
-// in white, then turns into a frosted light bar once scrolled.
+// The same frosted light bar on every page.
 
 .site-header {
   position: sticky;
@@ -32,21 +31,6 @@
     gap: 0.5rem;
     @include up('lg') { display: flex; }
   }
-}
-
-.has-overlay-header {
-  .site-header:not(.is-scrolled) {
-    color: color('white');
-    background: transparent;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
-    .pill--outline { border-color: rgba(255, 255, 255, 0.75); color: color('white'); }
-    .pill--solid { background: color('white'); color: color('ink'); border-color: color('white'); }
-    .menu-toggle { border-color: rgba(255, 255, 255, 0.75); }
-    .wordmark__dot { box-shadow: none; }
-    a, button { @include focus-ring(var(--c-white)); }
-  }
-  main { margin-top: calc(-1 * var(--header-h)); }
 }
 
 .wordmark {

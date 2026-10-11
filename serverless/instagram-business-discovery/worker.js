@@ -13,7 +13,7 @@
  *   IG_USER_ID         your app user's Instagram professional account ID   (var)
  *   IG_ACCESS_TOKEN    long-lived token for that account                    (SECRET)
  *   GRAPH_VERSION      e.g. "v25.0" — check the current version in Meta docs (var)
- *   ALLOWED_ORIGIN     e.g. "https://cityfluence.in"                        (var)
+ *   ALLOWED_ORIGIN     e.g. "https://pawandz.github.io" (origin only)       (var)
  *   USERNAMES          comma-separated allowlist of consenting usernames    (var)
  *   CACHE_SECONDS      response cache TTL, default 3600 — confirm this is
  *                      consistent with Meta Platform Terms before raising   (var)
@@ -75,7 +75,13 @@ export default {
     const cache = caches.default;
     const cacheKey = new Request(new URL('/creators-v1', request.url).toString());
     const cached = await cache.match(cacheKey);
-    if (cached) return new Response(cached.body, { status: 200, headers: { ...Object.fromEntries(cached.headers), ...corsHeaders(env) } });
+    if (cached) {
+      // Headers.set replaces case-insensitively; spreading into an object would
+      // duplicate Access-Control-Allow-Origin, which browsers reject.
+      const headers = new Headers(cached.headers);
+      for (const [k, v] of Object.entries(corsHeaders(env))) headers.set(k, v);
+      return new Response(cached.body, { status: 200, headers });
+    }
 
     const usernames = (env.USERNAMES || '')
       .split(',')

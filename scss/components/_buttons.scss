@@ -109,5 +109,3 @@
   &--wide { width: 100%; min-height: 3.4rem; }
   &[aria-current='page'] { box-shadow: inset 0 0 0 1px currentColor; }
 }
-.has-overlay-header .site-header:not(.is-scrolled) .pill--search,
-.has-overlay-header .site-header:not(.is-scrolled) .pill--search svg { color: color('white'); }

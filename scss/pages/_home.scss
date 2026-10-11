@@ -36,8 +36,8 @@ $brown: #5b3a1e;
     position: relative;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100svh;
-    padding: calc(var(--header-h) + clamp(1.5rem, 4vw, 3rem)) clamp(1rem, 2.6vw, 2.5rem) clamp(1.25rem, 3vw, 2.25rem);
+    min-height: calc(100svh - var(--header-h));
+    padding: clamp(1.5rem, 4vw, 3rem) clamp(1rem, 2.6vw, 2.5rem) clamp(1.25rem, 3vw, 2.25rem);
   }
 
   &__intro { max-width: 27rem; }
