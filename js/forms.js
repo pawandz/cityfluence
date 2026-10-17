@@ -108,7 +108,7 @@ async function submit(form) {
 
   const payload = Object.fromEntries(new FormData(form).entries());
   delete payload._gotcha;
-  payload._subject = `Cityfluence — new ${type} inquiry`;
+  payload._subject = `Chandigarhcitylyf — new ${type} inquiry`;
   payload._template = 'table';
   payload._captcha = 'false';
   if (siteConfig.formCc?.length) payload._cc = siteConfig.formCc.join(',');

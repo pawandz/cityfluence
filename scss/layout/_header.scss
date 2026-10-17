@@ -146,6 +146,10 @@ main { padding-top: var(--header-space); }
 }
 .site-header .wordmark__mark .wordmark__dot { margin: -0.13em 0 0 0.08em; }
 
+// The long name has to fit between nav and pills on desktop. Only the full
+// wordmark shrinks; the scrolled mark keeps its size (it's in em of .wordmark).
+@include up('lg') { .site-header .wordmark__full { font-size: 0.72em; } }
+
 // Below desktop the wordmark sits left beside the burger, so the mark
 // aligns left too instead of centring within the wordmark's width.
 @include down('lg') { .site-header .wordmark { place-items: center start; } }
@@ -235,8 +239,14 @@ main { padding-top: var(--header-space); }
 .announce { display: none; }
 
 // Compact desktop (1200–1359px): drop the secondary pills so nothing collides.
+// Up to 1679px the six nav links plus the long wordmark leave no room for the
+// Info pill (Info stays in the footer and mobile menu).
+@media (min-width: 1200px) and (max-width: 1679.98px) {
+  .nav__link { padding-inline: 0.8rem; }
+  .site-header .nav__pill { display: none; }
+}
 @media (min-width: 1200px) and (max-width: 1359.98px) {
-  .nav__link { padding-inline: 0.75rem; }
+  .nav__link { padding-inline: 0.6rem; }
   .site-header .nav__pill, .site-header .site-header__actions .pill--about { display: none; }
   .site-header .pill--search {
     width: 2.9rem;

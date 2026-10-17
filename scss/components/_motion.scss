@@ -1,0 +1,115 @@
+@use '../abstracts' as *;
+
+// Pieces of the interaction layer (js/motion-extras.js). Elements created by
+// JS only exist when motion is allowed; the marquee and glow are in the HTML
+// and read fine as static decoration.
+
+// ─── Scroll progress ──────────────────────────────
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: z('header') + 1;
+  height: 3px;
+  background: color('lime');
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+
+// ─── Contextual cursor label ──────────────────────
+.cursor-label {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: z('menu') - 1;
+  display: grid;
+  place-items: center;
+  min-width: 4.75rem;
+  height: 4.75rem;
+  padding: 0 0.9rem;
+  border-radius: 50%;
+  background: color('lime');
+  color: color('ink');
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.45);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+// ─── Velocity marquee ─────────────────────────────
+.marquee {
+  display: flex;
+  overflow: hidden;
+  padding-block: clamp(1rem, 2.2vw, 1.6rem);
+  background: color('lime');
+  color: color('ink');
+  white-space: nowrap;
+
+  &__track {
+    display: flex;
+    flex: none;
+    align-items: center;
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    padding-right: clamp(1.25rem, 3vw, 2.5rem);
+    will-change: transform;
+  }
+  span {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(1.75rem, 4.4vw, 4rem);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+  &__dot {
+    flex: none;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: color('ink');
+  }
+
+  // Footer ticker: lime type on ink, running into the black footer.
+  &--ink {
+    background: color('ink');
+    color: color('lime');
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    .marquee__dot { background: color('lime'); }
+  }
+}
+
+// Magnetic buttons: GSAP owns transform, so drop the CSS transform transition.
+.is-magnetic { transition-property: color, background-color, border-color, box-shadow; }
+
+// ─── Hero glow ─────────────────────────────────────
+.hero__glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: clamp(22rem, 46vw, 46rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 255, 58, 0.55) 0%, rgba(140, 130, 255, 0.35) 38%, transparent 70%);
+  filter: blur(40px);
+  mix-blend-mode: screen;
+  opacity: 0.55;
+  pointer-events: none;
+  transform: translate(38vw, 12vh);
+  animation: glow-breathe 9s var(--ease-in-out) infinite alternate;
+  @include reduced-motion { animation: none; }
+}
+@keyframes glow-breathe {
+  from { opacity: 0.4; scale: 0.9; }
+  to { opacity: 0.65; scale: 1.1; }
+}
+
+// ─── Split characters (hero headline) ─────────────
+.char-word { display: inline-block; white-space: nowrap; }
+.char { display: inline-block; will-change: transform; }
+
+// Tilted cards: GSAP owns transform, so drop the CSS transform transition.
+.is-tilt {
+  transition-property: box-shadow, background-color, color;
+  transform-style: preserve-3d;
+}

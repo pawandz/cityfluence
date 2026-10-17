@@ -1,4 +1,4 @@
-// Cityfluence — main stylesheet
+// Chandigarhcitylyf — main stylesheet
 // Compile: npm run build:css   (outputs css/main.css)
 
 // Base
@@ -21,6 +21,7 @@
 @use 'components/story-card';
 @use 'components/forms';
 @use 'components/misc';
+@use 'components/motion';
 
 // Pages
 @use 'pages/home';

@@ -8,6 +8,8 @@
  * prefers-reduced-motion reverts every tween, trigger and the Lenis instance.
  */
 
+import { initScrollProgress, initMarquees, initMagnetic, initTilt, initCursorLabel, initHeroGlow, initSmoothAnchors, initImageSettle, initPageHeroExit, initHomeScenes } from './motion-extras.js';
+
 let lenis = null;
 export const getLenis = () => lenis;
 
@@ -49,6 +51,40 @@ function splitWords(el) {
   return el.querySelectorAll('.split-word__inner');
 }
 
+/**
+ * Split a line into per-character spans, grouped by word so words never break.
+ * Inline elements (.hl highlights, <em>) are kept, with their text split inside.
+ */
+function splitChars(el) {
+  if (el.dataset.charsDone) return el.querySelectorAll('.char');
+  const walk = (node) => {
+    [...node.childNodes].forEach((child) => {
+      if (child.nodeType === Node.TEXT_NODE) {
+        const frag = document.createDocumentFragment();
+        child.textContent.split(/(\s+)/).forEach((part) => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) return frag.append(document.createTextNode(' '));
+          const word = document.createElement('span');
+          word.className = 'char-word';
+          [...part].forEach((c) => {
+            const ch = document.createElement('span');
+            ch.className = 'char';
+            ch.textContent = c;
+            word.append(ch);
+          });
+          frag.append(word);
+        });
+        child.replaceWith(frag);
+      } else if (child.nodeType === Node.ELEMENT_NODE && child.tagName !== 'BR') {
+        walk(child);
+      }
+    });
+  };
+  walk(el);
+  el.dataset.charsDone = 'true';
+  return el.querySelectorAll('.char');
+}
+
 function splitPlainWords(el) {
   if (el.dataset.scrubDone) return el.querySelectorAll('.word');
   const words = el.textContent.trim().split(/\s+/);
@@ -74,8 +110,13 @@ function heroTimeline(gsap) {
   const lines = hero.querySelectorAll('[data-hero="title"] .line__inner');
   const title = hero.querySelector('[data-hero="title"]');
   if (eyebrow) tl.from(eyebrow, { y: 14, autoAlpha: 0, duration: 0.7 }, 0.15);
-  if (lines.length) tl.from(lines, { yPercent: 110, stagger: 0.09, duration: 1.15 }, 0.22);
-  else if (title) tl.from(title, { y: 30, autoAlpha: 0 }, 0.22);
+  if (lines.length) {
+    // Characters rise through each line's mask with a slight lean.
+    title.setAttribute('aria-label', [...lines].map((l) => l.textContent.replace(/\s+/g, ' ').trim()).join(' '));
+    lines.forEach((line) => line.setAttribute('aria-hidden', 'true'));
+    const chars = [...lines].flatMap((line) => [...splitChars(line)]);
+    tl.from(chars, { yPercent: 120, rotation: 8, transformOrigin: '0% 100%', stagger: { amount: Math.min(chars.length * 0.024, 0.9) }, duration: 1.3 }, 0.25);
+  } else if (title) tl.from(title, { y: 30, autoAlpha: 0 }, 0.22);
 
   const frames = hero.querySelectorAll('.hero__frame, .page-hero__art, .article__hero');
   if (frames.length) {
@@ -96,6 +137,8 @@ function scrollReveals(gsap, ScrollTrigger) {
     const words = splitWords(el);
     gsap.from(words, {
       yPercent: 105,
+      rotation: 4,
+      transformOrigin: '0% 100%',
       duration: 1,
       ease: 'expo.out',
       stagger: 0.035,
@@ -145,12 +188,6 @@ function heroScrollParallax(gsap) {
     const section = track.parentElement;
     const distance = () => Math.max(0, track.scrollWidth - section.clientWidth);
     gsap.fromTo(track, { x: () => distance() * 0.1 }, { x: () => -distance() * 0.9, ease: 'none', scrollTrigger: { trigger: section, start: 'top bottom', end: 'bottom top', scrub: true, invalidateOnRefresh: true } });
-  });
-
-  // Floating UI cards move at different speeds around the centred headline.
-  gsap.utils.toArray('.control__float').forEach((card) => {
-    const depth = parseFloat(card.dataset.depth || '1');
-    gsap.fromTo(card, { y: 60 * depth }, { y: -60 * depth, ease: 'none', scrollTrigger: { trigger: card.closest('.control'), start: 'top bottom', end: 'bottom top', scrub: true } });
   });
 
   // Editorial images drift slightly inside their frames.
@@ -212,6 +249,33 @@ export function initMotion() {
       scrollReveals(gsap, ScrollTrigger);
       heroScrollParallax(gsap);
       const removePointer = desktop ? pointerParallax(gsap) : () => {};
+      const cleanups = [
+        initScrollProgress(gsap),
+        initMarquees(gsap, ScrollTrigger),
+        initSmoothAnchors(getLenis),
+        initImageSettle(gsap, ScrollTrigger),
+        initPageHeroExit(gsap),
+        initHomeScenes(gsap, ScrollTrigger, { desktop }),
+      ];
+      if (desktop) {
+        cleanups.push(
+          initMagnetic(gsap),
+          initHeroGlow(gsap),
+          initTilt(gsap, '.creator-card, .business-card, .float-card, .person-card, .story-card:not(.story-card--feature), .about-card, .package', 4),
+          // Labels only over elements that are themselves links.
+          initCursorLabel(gsap, [
+            ['a.float-card', 'View'],
+            ['a.person-card__link', 'View'],
+            ['a.category-tile', 'Explore'],
+            ['a.story-card__link', 'Read'],
+          ]),
+        );
+      }
+
+      // The pinned home scene is created after the reveal triggers below it;
+      // sort by page position so pin spacing is accounted for on refresh.
+      ScrollTrigger.sort();
+      ScrollTrigger.refresh();
 
       // Fonts and lazy images change layout — refresh trigger positions once settled.
       document.fonts?.ready.then(() => ScrollTrigger.refresh());
@@ -219,6 +283,7 @@ export function initMotion() {
 
       return () => {
         removePointer();
+        cleanups.forEach((fn) => fn());
         if (raf) gsap.ticker.remove(raf);
         lenis?.destroy();
         lenis = null;

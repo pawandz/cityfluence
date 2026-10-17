@@ -1,5 +1,5 @@
 /**
- * Cityfluence site configuration.
+ * Chandigarhcitylyf site configuration.
  *
  * Shared by the browser (ES module) and the Node build script.
  * Every value that is `null` is an OUTSTANDING PRODUCTION SETTING —
@@ -7,7 +7,7 @@
  * See README.md → "Production configuration checklist".
  */
 export const siteConfig = {
-  name: 'Cityfluence',
+  name: 'Chandigarhcitylyf',
   tagline: 'Where Chandigarh Connects.',
   supportingTagline: 'Local Stories. Real Creators. Bigger Impact.',
 
@@ -31,7 +31,7 @@ export const siteConfig = {
     phones: ['9888881405', '9988328149'],
   },
   social: {
-    instagram: null, // e.g. 'https://www.instagram.com/cityfluence/'
+    instagram: null, // e.g. 'https://www.instagram.com/chandigarhcitylyf/'
     youtube: null,
   },
 
@@ -45,6 +45,7 @@ export const siteConfig = {
     business: 'https://formsubmit.co/ajax/pawan1985chd@gmail.com',
     creator: 'https://formsubmit.co/ajax/pawan1985chd@gmail.com',
     partner: 'https://formsubmit.co/ajax/pawan1985chd@gmail.com',
+    advertise: 'https://formsubmit.co/ajax/pawan1985chd@gmail.com',
   },
   formCc: ['vikas1999chd@gmail.com'],
 

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://pawandz.github.io/cityfluence/about/</loc><priority>0.8</priority></url>
+  <url><loc>https://pawandz.github.io/cityfluence/advertise-with-us/</loc><priority>0.8</priority></url>
   <url><loc>https://pawandz.github.io/cityfluence/city-life/</loc><priority>0.8</priority></url>
   <url><loc>https://pawandz.github.io/cityfluence/contact/</loc><priority>0.8</priority></url>
   <url><loc>https://pawandz.github.io/cityfluence/creators/</loc><priority>0.8</priority></url>
+  <url><loc>https://pawandz.github.io/cityfluence/events-in-chandigarh/</loc><priority>0.8</priority></url>
   <url><loc>https://pawandz.github.io/cityfluence/for-businesses/</loc><priority>0.8</priority></url>
   <url><loc>https://pawandz.github.io/cityfluence/</loc><priority>1.0</priority></url>
   <url><loc>https://pawandz.github.io/cityfluence/info/</loc><priority>0.8</priority></url>

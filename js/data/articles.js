@@ -32,7 +32,7 @@ export const articles = [
       'Beyond the postcard views: how to see Chandigarh’s best-known landmarks as a local would — slowly, on foot, and with a little context.',
     intro:
       'Chandigarh is often described in a single line — the planned city, the City Beautiful. Spend a weekend here and you notice something more interesting: a place where modernist architecture, gardens and everyday life sit unusually close together.',
-    author: 'Cityfluence Editorial',
+    author: 'Chandigarhcitylyf Editorial',
     published: '2026-10-11',
     updated: '2026-10-11',
     readingTime: 5,
@@ -70,7 +70,7 @@ export const articles = [
       'Sectors, “V” roads and green belts: the simple logic behind how Chandigarh is laid out — and why it still shapes daily life.',
     intro:
       'New to Chandigarh? The city’s layout can feel abstract at first. Once you understand a few principles behind the plan, finding your way — and understanding the city’s character — becomes much easier.',
-    author: 'Cityfluence Editorial',
+    author: 'Chandigarhcitylyf Editorial',
     published: '2026-10-11',
     updated: '2026-10-11',
     readingTime: 4,
@@ -102,7 +102,7 @@ export const articles = [
       'Three cities, two states and one Union Territory. A quick guide to how the Tricity fits together.',
     intro:
       'Locals talk about the “Tricity” as one place — and in daily life it often is. Officially, though, Chandigarh, Mohali and Panchkula sit under three different administrations.',
-    author: 'Cityfluence Editorial',
+    author: 'Chandigarhcitylyf Editorial',
     published: '2026-10-11',
     updated: '2026-10-11',
     readingTime: 3,
@@ -129,7 +129,7 @@ export const articles = [
       'A practical checklist for cafés, studios and local brands planning their first creator collaboration.',
     intro:
       'Creator marketing works best when it is treated like any other investment: clear objectives, the right partners, honest disclosure and a realistic way to judge results.',
-    author: 'Cityfluence Editorial',
+    author: 'Chandigarhcitylyf Editorial',
     published: '2026-10-11',
     updated: '2026-10-11',
     readingTime: 6,
@@ -165,7 +165,7 @@ export const articles = [
       'One page, honest numbers, clear services. What local businesses look for when they review a creator.',
     intro:
       'Most local businesses spend less than a minute on a creator’s media kit. Make that minute count with clarity rather than decoration.',
-    author: 'Cityfluence Editorial',
+    author: 'Chandigarhcitylyf Editorial',
     published: '2026-10-11',
     updated: '2026-10-11',
     readingTime: 4,

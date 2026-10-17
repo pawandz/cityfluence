@@ -1,16 +1,17 @@
 <!--meta
-{"route":"/","page":"home","title":"Cityfluence — Chandigarh Creators, City Life & Influencer Marketing","description":"Discover Chandigarh’s creators, meet the famous names from the city, explore life across Chandigarh, Mohali and Panchkula, and connect local businesses with the right creators.","bodyClass":"page-home"}
+{"route":"/","page":"home","title":"Chandigarhcitylyf — Chandigarh Creators, City Life & Influencer Marketing","description":"Discover Chandigarh’s creators, meet the famous names from the city, explore life across Chandigarh, Mohali and Panchkula, and connect local businesses with the right creators.","bodyClass":"page-home"}
 -->
 <section class="hero" data-hero aria-labelledby="hero-title">
   <div class="hero__media" aria-hidden="true">
     <img src="./assets/images/capitol.svg" alt="" width="900" height="1100" fetchpriority="high" data-hero="collage">
   </div>
+  <div class="hero__glow" aria-hidden="true"></div>
   <div class="hero__inner">
     <div class="hero__intro" data-hero="lede">
       <p class="hero__lede">Discover the people shaping our city. Explore the places everyone talks about. Connect local businesses with the creators who move Chandigarh forward.</p>
       <div class="hero__ctas" data-hero="ctas">
-        <a class="pill pill--light" href="./creators/">Explore creators</a>
-        <a class="pill pill--outline-light" href="./for-businesses/">Grow your business</a>
+        <a class="pill pill--light" href="./creators/" data-magnetic>Explore creators</a>
+        <a class="pill pill--outline-light" href="./for-businesses/" data-magnetic>Grow your business</a>
       </div>
     </div>
     <a class="hero__chip" href="./people/" data-hero="loc">
@@ -21,11 +22,23 @@
       <span class="line hero__line--a"><span class="line__inner">Chandigarh has</span></span>
       <span class="line hero__line--b"><span class="line__inner">its own influence</span></span>
     </h1>
-    <a class="hero__arrow" href="#powered" data-hero="cue" aria-label="Scroll to explore">
+    <a class="hero__arrow" href="#powered" data-hero="cue" data-scroll-to aria-label="Scroll to explore">
       <svg viewBox="0 0 48 48" width="44" height="44" aria-hidden="true"><path d="M24 6v34M10 27l14 14 14-14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
 </section>
+
+<div class="marquee" aria-hidden="true" data-marquee="32">
+  <div class="marquee__track">
+    <span>Creators</span><i class="marquee__dot"></i>
+    <span>City Life</span><i class="marquee__dot"></i>
+    <span>Famous People</span><i class="marquee__dot"></i>
+    <span>Stories</span><i class="marquee__dot"></i>
+    <span>Events</span><i class="marquee__dot"></i>
+    <span>Local Businesses</span><i class="marquee__dot"></i>
+    <span>Chandigarh · Mohali · Panchkula</span><i class="marquee__dot"></i>
+  </div>
+</div>
 
 <section class="powered" id="powered" aria-labelledby="powered-title">
   <h2 class="visually-hidden" id="powered-title">Local stories, powered by its people</h2>
@@ -40,7 +53,7 @@
     <a class="float-card" href="./people/neerja-bhanot/"><img src="./assets/images/people/neerja-bhanot.svg" alt="Poster for Neerja Bhanot" width="800" height="1000" loading="lazy"><span>Neerja Bhanot →</span></a>
   </div>
   <div class="powered__foot">
-    <p class="powered__copy" data-reveal>Cityfluence brings Chandigarh’s creators, businesses and audiences closer together — telling local stories, matching businesses with creators whose voice genuinely fits, and celebrating the people who made this city famous.</p>
+    <p class="powered__copy" data-reveal>Chandigarhcitylyf brings Chandigarh’s creators, businesses and audiences closer together — telling local stories, matching businesses with creators whose voice genuinely fits, and celebrating the people who made this city famous.</p>
     <div class="powered__type powered__type--bottom" aria-hidden="true" data-reveal><span>by its</span><span>people</span></div>
   </div>
 </section>
@@ -51,7 +64,7 @@
       <h2 class="section-title" id="featured-title" data-split>Meet the city’s creative powerhouses</h2>
       <div class="section-head__aside" data-reveal>
         <p>From food and fashion to lifestyle and entertainment, discover the creators giving our city its voice.</p>
-        <a class="pill pill--solid" href="./creators/">Explore all creators</a>
+        <a class="pill pill--solid" data-magnetic="0.25" href="./creators/">Explore all creators</a>
       </div>
     </header>
     <p class="notice notice--demo" data-reveal><strong>Featured Creators — editorial selection.</strong> The six profiles below are demonstration placeholders while creators are invited and verified. No real accounts or statistics are shown.</p>
@@ -95,7 +108,7 @@
     <div class="control__copy">
       <p data-reveal><strong>Discover</strong> creators whose niche, audience and content style fit your business. <strong>Connect</strong> by sharing your objective — we come back with a creator and campaign proposal.</p>
       <p data-reveal><strong>Grow</strong> with authentic content, honest disclosure and a review based on the performance data that’s actually available.</p>
-      <a class="pill pill--solid" href="./for-businesses/#inquiry" data-reveal>Plan a campaign</a>
+      <a class="pill pill--solid" data-magnetic="0.25" href="./for-businesses/#inquiry" data-reveal>Plan a campaign</a>
     </div>
     <div class="brief-mock" data-reveal aria-hidden="true">
       <p class="brief-mock__head"><span>Campaign brief</span><span class="brief-mock__dot"></span></p>
@@ -114,7 +127,7 @@
       <h2 class="section-title section-title--xl" id="city-title" data-split>This is our city</h2>
       <div class="section-head__aside" data-reveal>
         <p>Food, places, fashion, nightlife, art and the people behind it all — told by locals, for locals and curious visitors.</p>
-        <a class="pill pill--solid" href="./city-life/">Explore city life</a>
+        <a class="pill pill--solid" data-magnetic="0.25" href="./city-life/">Explore city life</a>
       </div>
     </header>
     <div class="city-bento">
@@ -138,7 +151,7 @@
       <h2 class="section-title" id="spotlight-title" data-split>Local businesses deserve the spotlight</h2>
       <div class="section-head__aside" data-reveal>
         <p>From a neighbourhood café to a growing lifestyle brand, every local business has a story worth sharing.</p>
-        <a class="pill pill--solid" href="./contact/?type=business">Get your business featured</a>
+        <a class="pill pill--solid" data-magnetic="0.25" href="./contact/?type=business">Get your business featured</a>
       </div>
     </header>
     <div class="business-grid" data-reveal-group>
@@ -178,7 +191,7 @@
     <header class="section-head section-head--split">
       <h2 class="section-title" id="latest-title" data-split>Latest stories</h2>
       <div class="section-head__aside" data-reveal>
-        <a class="pill pill--solid" href="./stories/">Read all stories</a>
+        <a class="pill pill--solid" data-magnetic="0.25" href="./stories/">Read all stories</a>
       </div>
     </header>
     <div class="story-grid" data-reveal-group>
@@ -190,10 +203,10 @@
 <section class="closing" aria-labelledby="closing-title">
   <div class="closing__media" aria-hidden="true"><img src="./assets/images/sukhna.svg" alt="" width="1200" height="800" loading="lazy"></div>
   <div class="closing__card" data-reveal>
-    <span class="wordmark" aria-hidden="true">CITYFLUENCE<span class="wordmark__dot"></span></span>
+    <span class="wordmark" aria-hidden="true">CHANDIGARHCITYLYF<span class="wordmark__dot"></span></span>
     <h2 class="closing__title" id="closing-title">Your city to create</h2>
     <a class="pill pill--solid pill--wide" href="./contact/">Let’s collaborate</a>
-    <a class="pill pill--outline pill--wide" href="./contact/?type=creator">Join as a creator</a>
+    <a class="pill pill--outline pill--wide" data-magnetic="0.25" href="./contact/?type=creator">Join as a creator</a>
     <p class="closing__note">Prefer to talk? Call <a class="link-underline" href="tel:+919888881405">+91 98888 81405</a></p>
   </div>
 </section>

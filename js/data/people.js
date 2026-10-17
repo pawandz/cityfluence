@@ -11,8 +11,8 @@
  * Do not add claims without a source. Facts about living people change —
  * re-check before major updates and bump `reviewed`.
  *
- * Cityfluence is not affiliated with any person listed. These are editorial
- * profiles; nothing here implies endorsement of Cityfluence.
+ * Chandigarhcitylyf is not affiliated with any person listed. These are editorial
+ * profiles; nothing here implies endorsement of Chandigarhcitylyf.
  *
  * Fields:
  *   slug, name, field (FIELDS key), role, born / died (ISO), roots (Chandigarh

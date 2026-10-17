@@ -35,7 +35,7 @@ Front-end behaviour:
 
 ## Setup steps
 
-1. Convert the Cityfluence Instagram account to a **professional** account and link it to a Facebook Page.
+1. Convert the Chandigarhcitylyf Instagram account to a **professional** account and link it to a Facebook Page.
 2. Create a Meta app (type: Business) and add the Instagram product (*API setup with Facebook Login*).
 3. Request the required permissions and complete App Review / Business Verification as Meta requires.
 4. Generate a **long-lived** user access token. Plan for token refresh (they expire), e.g. a scheduled worker or a manual calendar reminder.

@@ -1,5 +1,5 @@
 /**
- * Static HTML build for Cityfluence.
+ * Static HTML build for Chandigarhcitylyf.
  *
  *   src/partials/*.html   shared head, header, footer, scripts
  *   src/pages/*.html      one file per page, with a <!--meta {...}--> header
@@ -243,7 +243,7 @@ for (const a of articles) {
   const ctx = baseCtx({
     route,
     page: 'stories',
-    title: `${a.title} | Cityfluence`,
+    title: `${a.title} | Chandigarhcitylyf`,
     description: a.excerpt,
     ogType: 'article',
     bodyClass: 'page-article',
@@ -288,7 +288,7 @@ for (const a of articles) {
     articleCaption: escapeHtml(a.caption ?? ''),
     articleBody: a.body.map(bodyBlock).join('\n'),
     sponsoredNotice: a.sponsored
-      ? '<p class="notice notice--sponsored"><strong>Sponsored.</strong> This story was paid for by a partner. Cityfluence retains editorial control.</p>'
+      ? '<p class="notice notice--sponsored"><strong>Sponsored.</strong> This story was paid for by a partner. Chandigarhcitylyf retains editorial control.</p>'
       : '',
     relatedCards: related.map((r) => renderArticleCard(r, ctx.root)).join(''),
     shareWhatsapp: `https://wa.me/?text=${encodeURIComponent(a.title + ' ')}${share}`,
@@ -308,7 +308,7 @@ for (const p of people) {
   const ctx = baseCtx({
     route,
     page: 'people',
-    title: `${p.name} — Born in Chandigarh | Biography, Timeline & Facts | Cityfluence`,
+    title: `${p.name} — Born in Chandigarh | Biography, Timeline & Facts | Chandigarhcitylyf`,
     description: p.summary,
     ogType: 'profile',
     bodyClass: 'page-person',

@@ -169,6 +169,17 @@ $brown: #5b3a1e;
     min-height: clamp(34rem, 80vh, 52rem);
     padding: 4rem 1rem;
   }
+  // Desktop pins this stage at the top of the viewport (js/motion-extras.js),
+  // so it fills the screen and keeps the cards clear of the fixed header.
+  @media (min-width: 900px) and (pointer: fine) {
+    &__stage {
+      min-height: 100svh;
+      padding-top: calc(var(--header-space) + 2rem);
+    }
+    &__float--a { top: calc(var(--header-space) + 6%); }
+    &__float--b { top: calc(var(--header-space) + 9%); }
+  }
+
   &__title {
     position: relative;
     z-index: 2;

@@ -1,4 +1,4 @@
-# Cityfluence
+# Chandigarhcitylyf
 
 **Where Chandigarh Connects.** A static website for a Chandigarh-based creator discovery platform, influencer-marketing service and city-culture magazine. It covers Chandigarh, Mohali and Panchkula.
 
@@ -123,14 +123,14 @@ Other scripts:
 
 1. Create a repository (e.g. `cityfluence`) and push:
    ```bash
-   git init && git add . && git commit -m "Initial Cityfluence site"
+   git init && git add . && git commit -m "Initial Chandigarhcitylyf site"
    git branch -M main
    git remote add origin https://github.com/<you>/cityfluence.git
    git push -u origin main
    ```
 2. In **Settings → Pages**, set **Source: Deploy from a branch**, **Branch: `main` / root**.
 3. **Project URL** (`https://<you>.github.io/cityfluence/`): all pages use relative links, so they work. Only `404.html` needs an absolute base. Set `basePath: '/cityfluence/'` in `js/config.js`, then rebuild.
-4. **Custom domain**: once you own the domain, keep `basePath: '/'`, set `siteUrl` (used for canonical URLs, Open Graph and the sitemap) and add a `CNAME` file containing the domain (e.g. `cityfluence.in`). Configure DNS: four `A` records to GitHub's Pages IPs (or a `CNAME` for `www` → `<you>.github.io`). Then tick **Enforce HTTPS**.
+4. **Custom domain**: once you own the domain, keep `basePath: '/'`, set `siteUrl` (used for canonical URLs, Open Graph and the sitemap) and add a `CNAME` file containing the domain (e.g. `chandigarhcitylyf.in`). Configure DNS: four `A` records to GitHub's Pages IPs (or a `CNAME` for `www` → `<you>.github.io`). Then tick **Enforce HTTPS**.
 5. Rebuild and commit whenever config or content changes.
 
 There's no production Node dependency. The optional Instagram worker and the form service are separate (see `docs/`).
@@ -140,8 +140,8 @@ There's no production Node dependency. The optional Instagram worker and the for
 Everything below is **outstanding**. The site degrades honestly until each one is done.
 
 **Brand and legal**
-- [ ] Register the domain. A DNS lookup on 11 Oct 2026 found no records for `cityfluence.in`, `cityfluence.co` or `thecityfluence.com`. That is **not** proof of availability, so check with a registrar.
-- [ ] Trademark search for "Cityfluence" (IP India public search, classes 35/41/42) before committing to the name. See `docs/BRAND.md`.
+- [ ] Register the domain (e.g. `chandigarhcitylyf.in`). Availability hasn't been checked for this name yet, so check with a registrar.
+- [ ] Trademark search for "Chandigarhcitylyf" (IP India public search, classes 35/41/42) before committing to the name. See `docs/BRAND.md`.
 - [ ] Legal review of `/privacy/` and `/terms/` (DPDP Act 2023), and fill the bracketed sections.
 
 **Configuration (`js/config.js`)**

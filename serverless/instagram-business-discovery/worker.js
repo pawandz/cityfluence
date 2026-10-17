@@ -1,5 +1,5 @@
 /**
- * Cityfluence — Instagram Business Discovery proxy (Cloudflare Worker).
+ * Chandigarhcitylyf — Instagram Business Discovery proxy (Cloudflare Worker).
  *
  * Returns follower/media counts for an ALLOWLIST of consenting creators'
  * Instagram professional (Business/Creator) accounts, using Meta's official

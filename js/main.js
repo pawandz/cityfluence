@@ -1,5 +1,5 @@
 /**
- * Cityfluence — entry point.
+ * Chandigarhcitylyf — entry point.
  * Each module is independent and guarded, so a failure in one never blocks the rest.
  */
 import { initMotion } from './animations.js';
@@ -27,7 +27,7 @@ const run = (name, fn) => {
   try {
     fn();
   } catch (err) {
-    console.error(`[cityfluence] ${name} failed`, err);
+    console.error(`[chandigarhcitylyf] ${name} failed`, err);
   }
 };
 

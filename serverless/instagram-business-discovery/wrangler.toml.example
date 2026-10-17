@@ -1,7 +1,7 @@
 # Copy to wrangler.toml, fill in values, then:
 #   npx wrangler secret put IG_ACCESS_TOKEN
 #   npx wrangler deploy
-name = "cityfluence-creators"
+name = "chandigarhcitylyf-creators"
 main = "worker.js"
 compatibility_date = "2026-01-01"
 

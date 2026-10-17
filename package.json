@@ -1,5 +1,5 @@
 {
-  "name": "cityfluence",
+  "name": "chandigarhcitylyf",
   "version": "0.1.0",
   "scripts": {
     "build:css": "sass scss/main.scss css/main.css --style=compressed --no-source-map",
@@ -12,7 +12,7 @@
     "generate:art": "node scripts/generate-art.mjs"
   },
   "license": "UNLICENSED",
-  "description": "Cityfluence — Chandigarh creator discovery and city culture platform (static site).",
+  "description": "Chandigarhcitylyf — Chandigarh creator discovery and city culture platform (static site).",
   "devDependencies": {
     "sass": "1.77.8"
   },

@@ -22,7 +22,7 @@ formCc: ['vikas1999chd@gmail.com'],
 ```
 
 Each email goes to **pawan1985chd@gmail.com** with a copy (`_cc`) to **vikas1999chd@gmail.com**. Each submission also includes:
-- `_subject`: "Cityfluence — new business inquiry", or the creator/partner equivalent.
+- `_subject`: "Chandigarhcitylyf — new business inquiry", or the creator/partner equivalent.
 - `_replyto`: the visitor's email, so you can reply directly.
 - `_template: table`: a readable table layout.
 - `inquiryType`, `page`, and every field from the form.

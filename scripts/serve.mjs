@@ -19,4 +19,4 @@ createServer(async (req, res) => {
   } catch {
     res.writeHead(404, { 'Content-Type': types['.html'] }).end(await readFile(join(root, '404.html')));
   }
-}).listen(port, () => console.log(`Cityfluence preview → http://localhost:${port}/`));
+}).listen(port, () => console.log(`Chandigarhcitylyf preview → http://localhost:${port}/`));
