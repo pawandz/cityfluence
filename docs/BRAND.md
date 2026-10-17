@@ -11,9 +11,16 @@
 - Check social handle availability (Instagram, YouTube) for consistency.
 - Consider filing once the name is confirmed. Get advice from a trademark attorney.
 
-## Wordmark
+## Logo
 
-A text-only wordmark: **CHANDIGARHCITYLYF** in the display face, followed by a **lime dot** outlined in ink. It's set in HTML/CSS, so it's always crisp and accessible. The favicon is a "c" with the lime dot.
+Files are in `assets/brand/`.
+
+- **Lockup** (`logo-*.svg`): the emblem, a thin vertical rule, and "Chandigarh / City / Lyf" stacked in Inter Tight SemiBold. The text is converted to outlines, so the files don't need the font.
+- **Emblem** (`emblem-*.svg`): the Palace of Assembly (hyperboloid tower, pyramid, upswept portico) on the waves of Sukhna Lake, inside a ring. The Open Hand is deliberately not used: it's the Chandigarh Administration's official emblem and could imply an official connection.
+- **Colours:** indigo on lime is the primary pairing; ink, white and lime versions exist for other backgrounds. Wave lines are transparent cut-outs, so any version works on any background with enough contrast.
+- **Favicon / app icon:** lime emblem on an ink tile (`favicon.svg`, `app-icon-512.png`). Social share image: `og-image.png` (1200×630).
+- **On the site:** the logo is drawn with CSS masks (`scss/components/_brand.scss`) and takes the surrounding text colour. The header shows the lockup and morphs to the emblem when scrolled.
+- **Clear space:** at least the height of the ring's stroke ×4 around the lockup. Don't stretch, recolour parts separately, or set the name in another typeface.
 
 ## Colour
 

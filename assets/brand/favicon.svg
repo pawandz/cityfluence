@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#121212"/><svg x="5" y="5" width="54" height="54" viewBox="0 0 120 120"><g fill="#D4FF3A">
+  <defs>
+    <clipPath id="fav-disc"><circle cx="60" cy="60" r="55.5"/></clipPath>
+    <mask id="fav-waves" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
+      <rect width="120" height="120" fill="#fff"/>
+      <g fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round">
+        <path d="M-2 92c8 0 8-4 15-4s8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4"/>
+        <path d="M-9 101c8 0 8-4 15-4s8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4"/>
+      </g>
+    </mask>
+  </defs>
+  <g clip-path="url(#fav-disc)" mask="url(#fav-waves)">
+    <path d="M0 83c8 0 8-4 15-4s8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4v40H0z"/>
+  </g>
+  <path d="M31 83c4-10 7-20 6-31-.5-7-2-14-5-21l22-6c-2 7-3 15-3 23 0 12 3 24 8 35z"/>
+  <path d="M62 58 75.5 36 89 58z"/>
+  <path d="M18 56c22 9 56 8 84-6l2 5.5c-29 15-64 16-87 6.5z"/>
+  <path d="M66 66.5h4v16.5h-4zM76 65h4v18h-4zM86 61.5h4v21.5h-4zM96 56.5h4v26.5h-4z"/>
+  <path fill-rule="evenodd" d="M60 2.5a57.5 57.5 0 1 0 0 115a57.5 57.5 0 1 0 0-115zm0 4a53.5 53.5 0 1 1 0 107a53.5 53.5 0 1 1 0-107z"/></g></svg></svg>

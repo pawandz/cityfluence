@@ -163,6 +163,7 @@ const orgJsonLd = {
   '@type': 'Organization',
   name: siteConfig.name,
   url: siteConfig.siteUrl,
+  logo: `${siteConfig.siteUrl}/assets/brand/logo-indigo.png`,
   slogan: siteConfig.tagline,
   areaServed: ['Chandigarh', 'Mohali', 'Panchkula'].map((name) => ({ '@type': 'City', name })),
   ...(Object.values(siteConfig.social).some(Boolean) ? { sameAs: Object.values(siteConfig.social).filter(Boolean) } : {}),
@@ -193,6 +194,7 @@ function baseCtx(meta) {
     robots: meta.route === '404' ? 'noindex' : 'index, follow',
     jsonld: meta.jsonld ?? '',
     siteName: siteConfig.name,
+    ogImage: `${siteConfig.siteUrl}/assets/brand/og-image.png`,
     extraHead: meta.extraHead ?? '',
     arrow: arrowIcon,
   };

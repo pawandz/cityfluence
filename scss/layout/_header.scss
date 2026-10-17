@@ -81,7 +81,6 @@ $header-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
     --hdr-ind-bg: var(--c-white);
     --hdr-ind-fg: var(--c-ink);
     a, button { @include focus-ring(var(--c-white)); }
-    .wordmark__dot { box-shadow: none; }
   }
   // The solid CTA stays white over dark sections, scrolled or not.
   &.theme-dark { --hdr-cta-bg: var(--c-white); --hdr-cta-fg: var(--c-ink); }
@@ -103,52 +102,32 @@ $header-ease: cubic-bezier(0.215, 0.61, 0.355, 1);
 main { padding-top: var(--header-space); }
 .page-home main { padding-top: 0; }
 
-// ─── Wordmark ↔ mark ──────────────────────────────
+// ─── Logo ↔ emblem ────────────────────────────────
+// The header shows the full logo and morphs to the emblem once scrolled.
+// Logo art lives in assets/brand/ and is drawn via CSS masks (see
+// components/_brand.scss), so it takes the header's current text colour.
 .wordmark {
   display: inline-grid;
   place-items: center;
   justify-self: start;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.05rem, 1.7vw, 1.5rem);
-  letter-spacing: 0.04em;
-  line-height: 1;
+  line-height: 0;
   text-decoration: none;
-  white-space: nowrap;
   color: inherit;
   @include up('lg') { justify-self: center; }
 
   > * { grid-area: 1 / 1; position: relative; display: inline-flex; align-items: center; }
 
   &__full, &__mark { transition: opacity 1s $header-ease; }
-  &__mark { opacity: 0; font-size: 1.9em; letter-spacing: 0; }
-
-  &__dot {
-    width: 0.42em;
-    height: 0.42em;
-    margin-left: 0.18em;
-    border-radius: 50%;
-    background: color('lime');
-    box-shadow: 0 0 0 1.5px color('ink');
-    transition: transform var(--dur-base) var(--ease-out);
-  }
-  &__mark &__dot { width: 0.26em; height: 0.26em; }
-  @include hover { .wordmark__dot { transform: scale(1.4); } }
-  &--light { color: color('white'); .wordmark__dot { box-shadow: none; } }
+  &__mark { opacity: 0; }
+  &--light { color: color('white'); }
+  &--brand { color: color('indigo'); }
 }
-
-// The dot hangs outside the letters so they sit on the true centre line.
-.site-header .wordmark__dot {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  margin: -0.21em 0 0 0.22em;
+.site-header .wordmark {
+  --logo-h: clamp(2.6rem, 3.2vw, 3.1rem);
+  --emblem-h: clamp(2.4rem, 3vw, 2.75rem);
+  .brand-emblem { transition: transform var(--dur-slow) var(--ease-out); }
+  @include hover { .brand-emblem { transform: rotate(-8deg) scale(1.05); } }
 }
-.site-header .wordmark__mark .wordmark__dot { margin: -0.13em 0 0 0.08em; }
-
-// The long name has to fit between nav and pills on desktop. Only the full
-// wordmark shrinks; the scrolled mark keeps its size (it's in em of .wordmark).
-@include up('lg') { .site-header .wordmark__full { font-size: 0.72em; } }
 
 // Below desktop the wordmark sits left beside the burger, so the mark
 // aligns left too instead of centring within the wordmark's width.
@@ -239,10 +218,13 @@ main { padding-top: var(--header-space); }
 .announce { display: none; }
 
 // Compact desktop (1200–1359px): drop the secondary pills so nothing collides.
-// Up to 1679px the six nav links plus the long wordmark leave no room for the
-// Info pill (Info stays in the footer and mobile menu).
+// Up to 1679px tighten the six nav links so they clear the centred logo.
+// Below 1440px the Info pill would touch the logo, so it's dropped (Info
+// stays in the footer and mobile menu).
 @media (min-width: 1200px) and (max-width: 1679.98px) {
   .nav__link { padding-inline: 0.8rem; }
+}
+@media (min-width: 1200px) and (max-width: 1439.98px) {
   .site-header .nav__pill { display: none; }
 }
 @media (min-width: 1200px) and (max-width: 1359.98px) {
