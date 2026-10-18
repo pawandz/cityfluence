@@ -163,7 +163,7 @@ const orgJsonLd = {
   '@type': 'Organization',
   name: siteConfig.name,
   url: siteConfig.siteUrl,
-  logo: `${siteConfig.siteUrl}/assets/brand/logo-indigo.png`,
+  logo: `${siteConfig.siteUrl}/assets/brand/logo-light.png`,
   slogan: siteConfig.tagline,
   areaServed: ['Chandigarh', 'Mohali', 'Panchkula'].map((name) => ({ '@type': 'City', name })),
   ...(Object.values(siteConfig.social).some(Boolean) ? { sameAs: Object.values(siteConfig.social).filter(Boolean) } : {}),

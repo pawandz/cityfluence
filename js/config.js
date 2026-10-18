@@ -31,8 +31,8 @@ export const siteConfig = {
     phones: ['9888881405', '9988328149'],
   },
   social: {
-    instagram: null, // e.g. 'https://www.instagram.com/chandigarhcitylyf/'
-    youtube: null,
+    instagram: 'https://www.instagram.com/chandigarhcitylyf/',
+    youtube: 'https://www.youtube.com/@chandigarhcitylyf',
   },
 
   // All forms post to FormSubmit (formsubmit.co), which emails each

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Chandigarhcitylyf"><defs>
+<linearGradient id="mg-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DDCF"/><stop offset="1" stop-color="#F3F0E8"/></linearGradient>
+<clipPath id="mg-clip"><rect width="120" height="120" rx="6"/></clipPath>
+<filter id="mg-grain"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.08 0"/></filter>
+</defs>
+<g clip-path="url(#mg-clip)">
+<rect width="120" height="120" fill="url(#mg-sky)"/>
+<circle cx="89" cy="30" r="14" fill="#D4FF3A"/>
+<path d="M0 82 L20 72 L36 78 L56 66 L78 75 L96 68 L120 76 L120 97 L0 97Z" fill="#8FA08A" opacity="0.45"/>
+<rect y="97" width="120" height="23" fill="#BDB8AD"/>
+<rect y="97" width="120" height="1.6" fill="#8C877D" opacity="0.6"/>
+<rect x="45.38" y="69.79" width="3.4" height="24.21" fill="#121212"/>
+<path d="M37.08 93.8H57.08L54.68 97H39.48Z" fill="#2A2A28"/>
+<path transform="translate(16.776 17.867) scale(0.09184)" d="M70 190C110 185 170 235 230 278C275 305 315 295 330 250C345 205 342 120 345 75C347 45 385 45 387 75L398 128C401 145 410 145 412 128L420 75C424 45 458 45 460 75L465 130C468 147 476 147 479 130L487 75C492 45 528 45 530 78L535 380L600 378C650 370 680 330 730 340C780 350 830 385 830 410C830 435 800 432 770 432C700 432 640 470 560 530C470 595 330 615 230 585C150 560 110 480 90 380C75 300 60 240 52 215C46 195 55 188 70 190Z" fill="#121212" stroke="#121212" stroke-width="7" stroke-linejoin="round"/>
+<rect width="120" height="120" filter="url(#mg-grain)"/>
+</g></svg>

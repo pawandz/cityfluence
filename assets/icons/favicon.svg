@@ -1,19 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#121212"/><svg x="5" y="5" width="54" height="54" viewBox="0 0 120 120"><g fill="#D4FF3A">
-  <defs>
-    <clipPath id="fav-disc"><circle cx="60" cy="60" r="55.5"/></clipPath>
-    <mask id="fav-waves" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">
-      <rect width="120" height="120" fill="#fff"/>
-      <g fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round">
-        <path d="M-2 92c8 0 8-4 15-4s8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4"/>
-        <path d="M-9 101c8 0 8-4 15-4s8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4"/>
-      </g>
-    </mask>
-  </defs>
-  <g clip-path="url(#fav-disc)" mask="url(#fav-waves)">
-    <path d="M0 83c8 0 8-4 15-4s8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4 8-4 15-4 8 4 15 4v40H0z"/>
-  </g>
-  <path d="M31 83c4-10 7-20 6-31-.5-7-2-14-5-21l22-6c-2 7-3 15-3 23 0 12 3 24 8 35z"/>
-  <path d="M62 58 75.5 36 89 58z"/>
-  <path d="M18 56c22 9 56 8 84-6l2 5.5c-29 15-64 16-87 6.5z"/>
-  <path d="M66 66.5h4v16.5h-4zM76 65h4v18h-4zM86 61.5h4v21.5h-4zM96 56.5h4v26.5h-4z"/>
-  <path fill-rule="evenodd" d="M60 2.5a57.5 57.5 0 1 0 0 115a57.5 57.5 0 1 0 0-115zm0 4a53.5 53.5 0 1 1 0 107a53.5 53.5 0 1 1 0-107z"/></g></svg></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Chandigarhcitylyf"><defs>
+<linearGradient id="fv-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E4DDCF"/><stop offset="1" stop-color="#F3F0E8"/></linearGradient>
+<clipPath id="fv-clip"><rect width="120" height="120" rx="18"/></clipPath>
+
+</defs>
+<g clip-path="url(#fv-clip)">
+<rect width="120" height="120" fill="url(#fv-sky)"/>
+<circle cx="89" cy="30" r="14" fill="#D4FF3A"/>
+<path d="M0 82 L20 72 L36 78 L56 66 L78 75 L96 68 L120 76 L120 97 L0 97Z" fill="#8FA08A" opacity="0.45"/>
+<rect y="97" width="120" height="23" fill="#BDB8AD"/>
+<rect y="97" width="120" height="1.6" fill="#8C877D" opacity="0.6"/>
+<rect x="45.38" y="69.79" width="3.4" height="24.21" fill="#121212"/>
+<path d="M37.08 93.8H57.08L54.68 97H39.48Z" fill="#2A2A28"/>
+<path transform="translate(16.776 17.867) scale(0.09184)" d="M70 190C110 185 170 235 230 278C275 305 315 295 330 250C345 205 342 120 345 75C347 45 385 45 387 75L398 128C401 145 410 145 412 128L420 75C424 45 458 45 460 75L465 130C468 147 476 147 479 130L487 75C492 45 528 45 530 78L535 380L600 378C650 370 680 330 730 340C780 350 830 385 830 410C830 435 800 432 770 432C700 432 640 470 560 530C470 595 330 615 230 585C150 560 110 480 90 380C75 300 60 240 52 215C46 195 55 188 70 190Z" fill="#121212" stroke="#121212" stroke-width="7" stroke-linejoin="round"/>
+
+</g></svg>

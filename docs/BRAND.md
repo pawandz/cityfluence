@@ -15,12 +15,12 @@
 
 Files are in `assets/brand/`.
 
-- **Lockup** (`logo-*.svg`): the emblem, a thin vertical rule, and "Chandigarh / City / Lyf" stacked in Inter Tight SemiBold. The text is converted to outlines, so the files don't need the font.
-- **Emblem** (`emblem-*.svg`): the Palace of Assembly (hyperboloid tower, pyramid, upswept portico) on the waves of Sukhna Lake, inside a ring. The Open Hand is deliberately not used: it's the Chandigarh Administration's official emblem and could imply an official connection.
-- **Colours:** indigo on lime is the primary pairing; ink, white and lime versions exist for other backgrounds. Wave lines are transparent cut-outs, so any version works on any background with enough contrast.
-- **Favicon / app icon:** lime emblem on an ink tile (`favicon.svg`, `app-icon-512.png`). Social share image: `og-image.png` (1200×630).
-- **On the site:** the logo is drawn with CSS masks (`scss/components/_brand.scss`) and takes the surrounding text colour. The header shows the lockup and morphs to the emblem when scrolled.
-- **Clear space:** at least the height of the ring's stroke ×4 around the lockup. Don't stretch, recolour parts separately, or set the name in another typeface.
+- **Symbol:** the Open Hand Monument on its pole and pedestal, drawn as a miniature of the site's illustrations (`assets/images/*.svg`): flat shapes, beige sky gradient, sage hills, concrete ground, a lime sun and the monument as a near-black silhouette. `mark.svg` for screens; `mark-grain.svg` adds the illustrations' film grain for large or print use.
+- **Lockup:** the tile, then "Chandigarh City Lyf" in Inter Tight SemiBold; in large placements a hairline and the descriptor "CREATORS · CITY LIFE · LOCAL BUSINESS" follow. Text is converted to outlines.
+- **Themes:** the tile never changes. `logo-light.svg` (ink name, grey descriptor) for light backgrounds; `logo-dark.svg` (white name, light-grey descriptor) for dark ones. PNG exports, favicon, a 512px app icon, a 1200×630 share image and the social media kit (`social/`) are alongside.
+- **On the site:** `scss/components/_brand.scss` draws the tile from `mark.svg` and the name/descriptor as masks in currentColor, so text follows the theme. Header: tile + name, becoming the tile alone when scrolled. Footer: full lockup with descriptor. Drop the descriptor below roughly 90px tile height; it stops being legible.
+- **Open Hand note:** the Open Hand is also the Chandigarh Administration's emblem. Keep this brand's own treatment (line pictogram, indigo/lime, square tile) and never pair it with the administration's colours, seal layout or name, so there's no implied official connection.
+- **Clear space:** at least half the tile's height on every side. Don't stretch, recolour layers independently of the two themes, or reset the name in another typeface.
 
 ## Colour
 

@@ -120,13 +120,13 @@ main { padding-top: var(--header-space); }
   &__full, &__mark { transition: opacity 1s $header-ease; }
   &__mark { opacity: 0; }
   &--light { color: color('white'); }
-  &--brand { color: color('indigo'); }
+  &--brand { color: color('ink'); }
 }
 .site-header .wordmark {
-  --logo-h: clamp(2.6rem, 3.2vw, 3.1rem);
-  --emblem-h: clamp(2.4rem, 3vw, 2.75rem);
-  .brand-emblem { transition: transform var(--dur-slow) var(--ease-out); }
-  @include hover { .brand-emblem { transform: rotate(-8deg) scale(1.05); } }
+  --logo-h: clamp(2.25rem, 2.5vw, 2.5rem);
+  .wordmark__mark { --logo-h: clamp(2.4rem, 3vw, 2.75rem); }
+  .brand-mark { transition: transform var(--dur-slow) var(--ease-out); }
+  @include hover { .brand-mark { transform: rotate(-4deg) scale(1.04); } }
 }
 
 // Below desktop the wordmark sits left beside the burger, so the mark
@@ -219,12 +219,12 @@ main { padding-top: var(--header-space); }
 
 // Compact desktop (1200–1359px): drop the secondary pills so nothing collides.
 // Up to 1679px tighten the six nav links so they clear the centred logo.
-// Below 1440px the Info pill would touch the logo, so it's dropped (Info
+// Below 1680px the Info pill would touch the logo, so it's dropped (Info
 // stays in the footer and mobile menu).
 @media (min-width: 1200px) and (max-width: 1679.98px) {
   .nav__link { padding-inline: 0.8rem; }
 }
-@media (min-width: 1200px) and (max-width: 1439.98px) {
+@media (min-width: 1200px) and (max-width: 1679.98px) {
   .site-header .nav__pill { display: none; }
 }
 @media (min-width: 1200px) and (max-width: 1359.98px) {

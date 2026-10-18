@@ -1,12 +1,22 @@
 @use '../abstracts' as *;
 
-// Brand logo and emblem (art in assets/brand/, generated with text outlined).
-// Drawn as CSS masks filled with currentColor so one file serves every
-// colour context: indigo, ink, white or lime come from the parent's `color`.
+// Brand logo: the Open Hand scene tile (drawn in the style of the site's
+// illustrations, assets/images/*.svg), "Chandigarh City Lyf", optional
+// hairline and descriptor. The tile is a full-colour image and looks the same
+// everywhere; the name (currentColor) and descriptor are masks, so they
+// follow the theme: ink/grey on light backgrounds, white/light grey on dark.
+// All sizes derive from --logo-h (tile height); proportions come from the
+// 120-unit tile the art was drawn on.
 
-%brand-mask {
+:root { --logo-desc: #6b6a75; }
+
+// Dark contexts: lighter descriptor (the name already follows currentColor).
+.wordmark--light,
+.site-footer,
+.site-header.theme-dark:not(.is-scrolled) { --logo-desc: #b9b8c6; }
+
+%layer {
   display: block;
-  background: currentColor;
   mask-position: center;
   mask-size: contain;
   mask-repeat: no-repeat;
@@ -17,22 +27,71 @@
   // Forced-colours modes drop backgrounds; keep the logo visible.
   @media (forced-colors: active) {
     forced-color-adjust: none;
-    background: CanvasText;
+    background: CanvasText !important;
   }
 }
 
+.brand-logo,
+.brand-mark { --u: calc(var(--logo-h, 2.75rem) / 120); }
+
 .brand-logo {
-  @extend %brand-mask;
-  height: var(--logo-h, 2.75rem);
-  aspect-ratio: 359 / 126;
-  mask-image: url('../assets/brand/logo-ink.svg');
-  -webkit-mask-image: url('../assets/brand/logo-ink.svg');
+  display: inline-flex;
+  align-items: center;
+  gap: calc(var(--u) * 28);
+  line-height: 0;
 }
 
-.brand-emblem {
-  @extend %brand-mask;
-  height: var(--emblem-h, 2.5rem);
-  aspect-ratio: 1;
-  mask-image: url('../assets/brand/emblem-ink.svg');
-  -webkit-mask-image: url('../assets/brand/emblem-ink.svg');
+.brand-mark {
+  position: relative;
+  flex: none;
+  width: calc(var(--u) * 120);
+  height: calc(var(--u) * 120);
+
+  &__tile {
+    position: absolute;
+    inset: 0;
+    background: url('../assets/brand/mark.svg') center / contain no-repeat;
+  }
+}
+
+.brand-text {
+  display: grid;
+  justify-items: start;
+}
+
+.brand-name {
+  @extend %layer;
+  height: calc(var(--u) * 39.14);
+  aspect-ratio: 341.07 / 39.14;
+  background: currentColor;
+  mask-image: url('../assets/brand/name.svg');
+  -webkit-mask-image: url('../assets/brand/name.svg');
+}
+
+// Hairline + descriptor: only for large placements (footer, print), where
+// the descriptor is still legible.
+.brand-rule {
+  display: block;
+  width: 100%;
+  height: max(1px, calc(var(--u) * 1.6));
+  margin-top: calc(var(--u) * 5);
+  background: var(--logo-desc);
+  opacity: 0.5;
+}
+
+.brand-desc {
+  @extend %layer;
+  height: calc(var(--u) * 10.11);
+  aspect-ratio: 319.04 / 10.11;
+  margin: calc(var(--u) * 15) 0 0 calc(var(--u) * 1);
+  background: var(--logo-desc);
+  mask-image: url('../assets/brand/desc.svg');
+  -webkit-mask-image: url('../assets/brand/desc.svg');
+}
+
+// Compact lockup (header, menu, cards): no descriptor, so the name is set
+// larger against the tile to stay legible.
+.brand-logo--compact {
+  gap: calc(var(--u) * 24);
+  .brand-name { height: calc(var(--u) * 50); }
 }
